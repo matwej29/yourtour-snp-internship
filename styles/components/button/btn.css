@@ -1,0 +1,10 @@
+.btn {
+  font-family: inherit;
+  border: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+}

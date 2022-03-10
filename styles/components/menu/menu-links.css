@@ -1,0 +1,8 @@
+.menu-links__link {
+  margin-right: 50px;
+}
+
+.menu-links__link :hover {
+  text-decoration: underline;
+  background-color: brown;
+}

@@ -1,0 +1,6 @@
+.details-button {
+  width: 199px;
+  height: 42px;
+  border-radius: 50px;
+  background: var(--green400);
+}

@@ -1,0 +1,16 @@
+.tour-button {
+  width: 118px;
+  height: 34px;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.tour-button :hover {
+  background-color: var(--orange200);
+  color: var(--white);
+}
+
+.tour-button :active {
+  background-color: var(--orange100);
+  color: var(--black);
+}

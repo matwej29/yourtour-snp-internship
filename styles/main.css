@@ -1,0 +1,43 @@
+@import url("components/headers.css");
+@import url("components/paragraphs.css");
+@import url("components/button/btn.css");
+@import url("components/button/tour-button.css");
+@import url("components/button/details-button.css");
+@import url("components/menu/menu.css");
+@import url("components/menu/menu-links.css");
+@import url("components/menu/menu__/menu__logo.css");
+@import url("components/page-header/page-header.css");
+@import url("components/card/card.css");
+@import url("components/card/card__/card__title.css");
+@import url("components/footer/footer.css");
+
+:root  {
+  --black: #1b1f2b;
+  --white: #ffffff;
+  --orange200: #efa501;
+  --orange100: #f8e6be;
+  --green400: #286562;
+  --green300: #3b7e7b;
+  --green200: #627f7e;
+  --green100: #e0f0e5;
+  --gray300: #a6a6a6;
+  --gray200: #d9dfdb;
+  --gray100: #f1f3f2;
+  --beige200: #f4f0e9;
+  --beige100: #f9f7f4;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-display: swap;
+  margin: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
