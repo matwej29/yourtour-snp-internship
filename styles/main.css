@@ -10,6 +10,7 @@
 @import url("components/card/card.css");
 @import url("components/card/card__/card__title.css");
 @import url("components/footer/footer.css");
+@import url("components/icons/arrow/arrow.css");
 
 :root  {
   --black: #1b1f2b;

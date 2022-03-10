@@ -2,5 +2,9 @@
   width: 199px;
   height: 42px;
   border-radius: 50px;
+  background: none;
+}
+
+.details-button :hover {
   background: var(--green400);
 }
