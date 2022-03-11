@@ -5,12 +5,14 @@
 @import url("components/button/details-button.css");
 @import url("components/menu/menu.css");
 @import url("components/menu/menu-links.css");
-@import url("components/menu/menu__/menu__logo.css");
 @import url("components/page-header/page-header.css");
 @import url("components/card/card.css");
-@import url("components/card/card__/card__title.css");
 @import url("components/footer/footer.css");
+@import url("components/footer/footer-links.css");
 @import url("components/icons/arrow/arrow.css");
+@import url("components/icons/instagram/instagram.css");
+@import url("components/icons/facebook/facebook.css");
+@import url("components/icons/vkontakte/vkontakte.css");
 
 :root  {
   --black: #1b1f2b;

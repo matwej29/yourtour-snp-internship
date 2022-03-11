@@ -1,4 +1,5 @@
 .card {
+  overflow: hidden;
   display: flex;
   width: 370px;
   height: 531px;
@@ -12,16 +13,22 @@
 }
 
 .card img {
-  position: absolute;
-  width: 370px;
-  height: 531px;
+  /* transform: translateX(-360px); */
+  margin-left: -370px;
+  object-fit: cover;
   z-index: -1;
   border-radius: 50px;
+  transition: transform 300ms;
+}
+
+.card:hover img {
+  transform: scale(1.2);
 }
 
 .card-content {
-  margin: 50px 50px;
+  margin: 50px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
 }
