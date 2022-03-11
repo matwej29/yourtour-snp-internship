@@ -1,4 +1,5 @@
 .card {
+  margin-bottom: 30px;
   overflow: hidden;
   display: flex;
   width: 370px;

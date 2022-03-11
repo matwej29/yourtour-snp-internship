@@ -13,6 +13,9 @@
 @import url("components/icons/instagram/instagram.css");
 @import url("components/icons/facebook/facebook.css");
 @import url("components/icons/vkontakte/vkontakte.css");
+@import url("components/tab/tab.css");
+@import url("components/card-row/card-row.css");
+@import url("components/main-block/main-block.css");
 
 :root  {
   --black: #1b1f2b;
@@ -43,4 +46,5 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 135px 0;
 }

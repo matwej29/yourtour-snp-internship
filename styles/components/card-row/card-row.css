@@ -1,0 +1,6 @@
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1170px;
+}

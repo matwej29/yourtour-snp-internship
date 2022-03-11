@@ -1,0 +1,10 @@
+.tab__element:hover {
+  border-bottom: 2px solid var(--black);
+  padding-bottom: 6px;
+}
+
+.tab__element__choosed {
+  color: var(--orange200);
+  border-bottom: 2px solid var(--orange200);
+  padding-bottom: 6px;
+}

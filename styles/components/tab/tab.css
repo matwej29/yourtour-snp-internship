@@ -1,0 +1,8 @@
+@import url("./tab__/tab__element.css");
+.tab {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 700px;
+}
