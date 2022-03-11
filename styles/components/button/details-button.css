@@ -1,10 +1,19 @@
 .details-button {
+  margin-left: -20px;
+  margin-bottom: -7px;
+  justify-content: space-between;
+  padding: 7px 21px 7px 20px;
   width: 199px;
   height: 42px;
   border-radius: 50px;
-  background: none;
+  background-color: transparent;
+  background-size: contain;
 }
 
-.details-button :hover {
-  background: var(--green400);
+.details-button:hover {
+  background-color: var(--green400);
+}
+
+.details-button:active {
+  background-color: var(--orange200);
 }

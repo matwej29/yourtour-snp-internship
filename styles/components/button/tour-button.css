@@ -5,12 +5,13 @@
   border-radius: 10px;
 }
 
-.tour-button :hover {
+.tour-button:hover {
   background-color: var(--orange200);
   color: var(--white);
+  border-color: var(--orange200);
 }
 
-.tour-button :active {
+.tour-button:active {
   background-color: var(--orange100);
   color: var(--black);
 }
