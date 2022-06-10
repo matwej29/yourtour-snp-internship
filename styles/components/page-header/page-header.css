@@ -18,9 +18,11 @@
 }
 
 .page-header-content {
+  margin: 202px 0 119px 0;
+  height: 100%;
   flex-wrap: wrap;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
 }

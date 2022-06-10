@@ -1,0 +1,19 @@
+.form__input {
+  background: var(--beige100);
+  border: 1px solid var(--beige200);
+  border-radius: 10px;
+  height: 68px;
+  min-width: 500px;
+  padding: 20px;
+  box-sizing: border-box;
+  appearance: none;
+}
+
+.form__input:hover{
+  background: var(--beige200);
+}
+
+.form__input:focus{
+  border: 1px solid var(--gray300);
+  outline: 0;
+}

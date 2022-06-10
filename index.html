@@ -8,23 +8,23 @@
     <title>YourTour</title>
   </head>
   <body>
-    <nav>
-      <div class="menu">
-        <img
-          class="menu__logo"
-          src="./styles/components/menu/menu__/YourTour.svg"
-        />
-        <div class="menu-links">
-          <a href="#" class="menu-links__link p_n p_white">Туры</a>
-          <a href="#" class="menu-links__link p_n p_white">Создать тур</a>
-          <a href="#" class="menu-links__link p_n p_white">Отзывы</a>
-          <a href="#" class="menu-links__link p_n p_white">Истории</a>
-        </div>
-        <div class="menu__number p_n p_white">+7 999 999 99 99</div>
-      </div>
-    </nav>
     <main>
       <div class="page-header">
+        <nav>
+          <div class="menu">
+            <img
+              class="menu__logo"
+              src="./styles/components/menu/menu__/YourTour.svg"
+            />
+            <div class="menu-links">
+              <a href="#" class="menu-links__link p_n p_white">Туры</a>
+              <a href="#" class="menu-links__link p_n p_white">Создать тур</a>
+              <a href="#" class="menu-links__link p_n p_white">Отзывы</a>
+              <a href="#" class="menu-links__link p_n p_white">Истории</a>
+            </div>
+            <div class="menu__number p_n p_white">+7 999 999 99 99</div>
+          </div>
+        </nav>
         <div class="page-header-content">
           <h1 class="p_white text-center">
             Идеальные <br />
@@ -32,14 +32,13 @@
             существуют
           </h1>
           <p class="p_n p_white text-center">
-            Идейные соображения высшего порядка, а также рамки и место
-            обучения кадров
+            Идейные соображения высшего порядка, а также рамки и место обучения
+            кадров
           </p>
           <button class="btn tour-button p_s">Найти тур</button>
         </div>
       </div>
       <div class="main">
-
         <div class="main-block">
           <div class="main-block-title">
             <h2 class="text-center">Выбери свой тур</h2>
@@ -131,8 +130,26 @@
               <img src="./styles/images/card tour photo-6.jpg" />
             </div>
           </div>
-      </div>
-    </div>
+        </div>
+        <div class="main-block">
+          <div class="main-block-title text-center">
+            <h2>Собери свой тур</h2>
+            <p class="p_s p_gray">
+              Идейные соображения высшего порядка, <br />
+              а также рамки и место обучения кадров
+            </p>
+          </div>
+
+          <form class="form">
+            <div class="form-group">
+              <p class="p_n p_clear">Имя</p>
+              <input type="text" class="form__input p_n" name="" id="" />
+            </div>
+            <div class="form-group">
+              <p class="p_n p_clear">Имя</p>
+              <select class="form__input p_n" />
+            </div>
+          </form>
         </div>
       </div>
     </main>
@@ -141,17 +158,17 @@
       <div class="footer">
         <p class="p_n p_gray">Наши социальные сети</p>
         <div class="footer-links">
-          <div class="footer-links__link">
-            <i class="instagram"></i>
-            <a href="#" class="p_n"> instagram</a>
+          <div class="footer-links-link">
+            <div class="instagram"></div>
+            <a href="#" class="p_n footer-links-link__text"> instagram</a>
           </div>
-          <div class="footer-links__link">
-            <i class="facebook"></i>
-            <a href="#" class="p_n">facebook</a>
+          <div class="footer-links-link">
+            <div class="facebook"></div>
+            <a href="#" class="p_n footer-links-link__text">facebook</a>
           </div>
-          <div class="footer-links__link">
-            <i class="vkontakte"></i>
-            <a href="#" class="p_n">vkontakte</a>
+          <div class="footer-links-link">
+            <div class="vkontakte"></div>
+            <a href="#" class="p_n footer-links-link__text">vkontakte</a>
           </div>
         </div>
       </div>

@@ -1,0 +1,14 @@
+@import url("form__/form__input.css");
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  background: var(--white);
+  border-radius: 50px;
+  max-width: 1170px;
+  padding: 70px;
+  box-sizing: border-box;
+}

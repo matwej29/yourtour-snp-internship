@@ -16,6 +16,7 @@
 @import url("components/tab/tab.css");
 @import url("components/card-row/card-row.css");
 @import url("components/main-block/main-block.css");
+@import url("components/form/form.css");
 
 :root  {
   --black: #1b1f2b;
@@ -39,12 +40,14 @@ body {
   margin: 0;
   overflow-x: hidden;
   min-height: 100vh;
+
+  background-color: #E5E5E5;
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin: 135px 0;
 }

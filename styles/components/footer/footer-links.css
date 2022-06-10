@@ -1,6 +1,8 @@
-@import url("footer-links__/footer-links__link.css");
+@import url("footer-links__/footer-links-link.css");
+@import url("footer-links__/footer-links-link__text.css");
 .footer-links {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }

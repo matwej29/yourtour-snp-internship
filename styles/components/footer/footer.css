@@ -5,4 +5,5 @@
   align-items: center;
   background-color: var(--beige200);
   height: 88px;
+  width: 100vw;
 }

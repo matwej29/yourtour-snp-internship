@@ -16,7 +16,6 @@
 .card img {
   /* transform: translateX(-360px); */
   margin-left: -370px;
-  object-fit: cover;
   z-index: -1;
   border-radius: 50px;
   transition: transform 300ms;

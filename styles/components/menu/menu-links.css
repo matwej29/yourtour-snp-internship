@@ -2,7 +2,6 @@
   margin-right: 50px;
 }
 
-.menu-links__link :hover {
-  text-decoration: underline;
-  background-color: brown;
+.menu-links__link:hover {
+  border-bottom: 1px solid var(--white);
 }

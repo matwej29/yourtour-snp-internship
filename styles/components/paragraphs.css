@@ -33,3 +33,7 @@ a {
 .p_gray {
   color: var(--gray300);
 }
+
+.p_clear{
+  margin: 0;
+}
