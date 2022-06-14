@@ -1,4 +1,4 @@
-.details-button {
+.btn-details {
   margin-left: -20px;
   margin-bottom: -7px;
   justify-content: space-between;
@@ -10,10 +10,10 @@
   background-size: contain;
 }
 
-.details-button:hover {
+.btn-details:hover {
   background-color: var(--green400);
 }
 
-.details-button:active {
+.btn-details:active {
   background-color: var(--orange200);
 }

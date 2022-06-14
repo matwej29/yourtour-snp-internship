@@ -1,8 +1,10 @@
 @import url("components/headers.css");
 @import url("components/paragraphs.css");
 @import url("components/button/btn.css");
-@import url("components/button/tour-button.css");
-@import url("components/button/details-button.css");
+@import url("components/button/btn-tour.css");
+@import url("components/button/btn-details.css");
+@import url("components/button/btn-find.css");
+@import url("components/button/btn-reset.css");
 @import url("components/menu/menu.css");
 @import url("components/menu/menu-links.css");
 @import url("components/page-header/page-header.css");
@@ -14,9 +16,10 @@
 @import url("components/icons/facebook/facebook.css");
 @import url("components/icons/vkontakte/vkontakte.css");
 @import url("components/tab/tab.css");
-@import url("components/card-row/card-row.css");
+@import url("components/card/card-row.css");
 @import url("components/main-block/main-block.css");
 @import url("components/form/form.css");
+@import url("components/link/link.css");
 
 :root  {
   --black: #1b1f2b;

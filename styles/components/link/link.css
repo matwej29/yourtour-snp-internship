@@ -1,0 +1,12 @@
+.link {
+  color: var(--black);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:active {
+  text-decoration: underline;
+  color: var(--green400);
+}

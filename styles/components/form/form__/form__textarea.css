@@ -1,0 +1,15 @@
+.form__textarea {
+  box-sizing: border-box;
+
+  width: 1030px;
+  max-width: 1030px;
+
+  height: 152px;
+  max-height: 152px;
+
+  background: var(--beige100);
+  border: 1px solid var(--beige200);
+
+  border-radius: 10px;
+}
+

@@ -17,3 +17,7 @@
   border: 1px solid var(--gray300);
   outline: 0;
 }
+
+.form__input::placeholder{
+  color: var(--gray300);
+}

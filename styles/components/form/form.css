@@ -1,14 +1,28 @@
+@import url("form-line.css");
 @import url("form__/form__input.css");
+@import url("form__/form__textarea.css");
+@import url("form__/form__input_type_radio/form__input_type_radio.css");
+@import url("form__/form__input_type_checkbox/form__input_type_checkbox.css");
+@import url("form__/form__input_type_select/form__input_type_select.css");
 
 .form {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   background: var(--white);
   border-radius: 50px;
   max-width: 1170px;
   padding: 70px;
   box-sizing: border-box;
+  gap: 33px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
 }

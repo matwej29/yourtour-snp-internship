@@ -1,0 +1,15 @@
+.btn-find {
+  color: var(--white);
+  width: 235px;
+  height: 58px;
+  background-color: var(--green400);
+  border-radius: 10px;
+}
+
+.btn-find:hover {
+  background-color: var(--green300);
+}
+
+.btn-find:active {
+  background-color: var(--green200);
+}

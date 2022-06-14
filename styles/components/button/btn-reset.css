@@ -1,0 +1,15 @@
+.btn-reset {
+  width: 235px;
+  height: 58px;
+  background-color: var(--green100);
+  color: var(--green400);
+  border-radius: 10px;
+}
+
+.btn-reset:hover {
+  background-color: var(--gray100);
+}
+
+.btn-reset:active {
+  background-color: var(--gray200);
+}
