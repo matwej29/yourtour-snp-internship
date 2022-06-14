@@ -20,6 +20,10 @@
 @import url("components/main-block/main-block.css");
 @import url("components/form/form.css");
 @import url("components/link/link.css");
+@import url("components/photo/photo-n.css");
+@import url("components/photo/photo-m.css");
+@import url("components/photo/photo-row.css");
+@import url("components/photo/photo-block.css");
 
 :root  {
   --black: #1b1f2b;
