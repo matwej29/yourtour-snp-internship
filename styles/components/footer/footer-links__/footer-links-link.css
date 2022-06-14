@@ -1,7 +1,7 @@
 .footer-links-link {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: baseline;
   gap: 10px;
   width: 125px;
   height: 28px;
