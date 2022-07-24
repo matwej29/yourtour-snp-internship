@@ -1,6 +1,15 @@
-.photo-row {
+/* .photo-row {
+  max-width: 100vw;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   gap: 30px;
+} */
+
+.photo-row {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 30px;
 }

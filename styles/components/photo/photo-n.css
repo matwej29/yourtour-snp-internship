@@ -1,6 +1,5 @@
 .photo-n {
-  width: 442.5px;
-  height: 300px;
-
+  max-height: 301px;
+  
   border-radius: 50px;
 }

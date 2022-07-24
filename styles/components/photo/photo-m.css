@@ -1,6 +1,5 @@
 .photo-m {
-  width: 349.16px;
-  height: 301px;
-
+  max-height: 301px;
+  max-width: 347.32px;
   border-radius: 50px;
 }
