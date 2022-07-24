@@ -1,0 +1,9 @@
+.review-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--beige200);
+  border-radius: 30px;
+  padding: 40px;
+  gap: 70px;
+}

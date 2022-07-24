@@ -1,0 +1,5 @@
+.review-card-grid {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 30px;
+}
