@@ -1,0 +1,7 @@
+.end-block__text {
+  display: flex;
+  width: 371px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
