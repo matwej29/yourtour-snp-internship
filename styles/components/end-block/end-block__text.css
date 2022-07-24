@@ -1,7 +1,15 @@
 .end-block__text {
   display: flex;
-  width: 371px;
+  max-width: 371px;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
+}
+
+
+
+@media screen and (max-width: 1023px) {
+  .end-block__text p {
+    text-align: center;
+  }
 }

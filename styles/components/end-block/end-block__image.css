@@ -3,3 +3,11 @@
   height: 370px;
   border-radius: 50px;
 }
+
+@media screen and (max-width: 1023px) {
+  .end-block__image{
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+  }
+}
