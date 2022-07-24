@@ -7,6 +7,7 @@
 
 .form {
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -19,8 +20,9 @@
 }
 
 .form-group {
+  box-sizing: border-box;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 0;
 }

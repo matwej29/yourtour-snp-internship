@@ -1,9 +1,7 @@
 .form__textarea {
   box-sizing: border-box;
-
-  width: 1030px;
-  max-width: 1030px;
-
+  
+  width: 100%;
   height: 152px;
   max-height: 152px;
 

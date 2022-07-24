@@ -1,7 +1,20 @@
-.form-line {
+/* .form-line {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
   gap: 30px;
+} */
+
+.form-line {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .form-line {
+    grid-auto-flow: row;
+  }
 }

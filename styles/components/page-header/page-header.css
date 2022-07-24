@@ -18,11 +18,22 @@
 }
 
 .page-header-content {
-  margin: 202px 0 119px 0;
+  margin: 207px 0 119px 0;
   height: 100%;
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+}
+
+@media screen and (max-width: 1024px) {
+  .page-header {
+    width: 100vw;
+    height: 488px;
+  }
+
+  .page-header-content {
+    margin: 140px 0 52px 0;
+  }
 }

@@ -1,6 +1,6 @@
 .card_type_horizontal {
   flex: 1;
-  /* width: 1170px; */
+  max-width: 1170px;
   height: 567px;
   background: linear-gradient(
     270deg,
@@ -11,4 +11,19 @@
 
 .card_type_horizontal .card-content__text-block {
   max-width: 554px;
+}
+
+
+
+@media screen and (max-width: 1023px) {
+  .card_type_horizontal{
+    height: 455px;
+  }
+  
+  .card_type_horizontal img{
+    height: 100%;
+    width: fit-content;
+    margin: 0;
+    margin-left: -calc(100% - 50vw);
+  }
 }

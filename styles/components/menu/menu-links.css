@@ -5,3 +5,9 @@
 .menu-links__link:hover {
   border-bottom: 1px solid var(--white);
 }
+
+@media screen and (max-width: 1024px) {
+  .menu-links__link {
+    display: none;
+  }
+}

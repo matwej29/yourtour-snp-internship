@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   display: flex;
-  /* width: 370px; */
+  max-width: 370px;
   height: 531px;
   border-radius: 50px;
   padding: 50px;
@@ -19,7 +19,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  height: 100%;
+  width: 100%;
   z-index: -1;
   border-radius: 50px;
   transition: transform 300ms;
@@ -56,4 +56,14 @@
 
 .card-links__link:hover {
   border-bottom: 1px solid var(--white);
+}
+
+@media screen and (max-width: 1023px) {
+  .card{
+    height: 318px;
+  }
+
+  .card img{
+    margin-top: -50%;
+  }
 }

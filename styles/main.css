@@ -1,5 +1,4 @@
-@import url("components/headers.css");
-@import url("components/paragraphs.css");
+@import url("components/typography.css");
 @import url("components/button/btn.css");
 @import url("components/button/btn-tour.css");
 @import url("components/button/btn-details.css");
@@ -64,4 +63,16 @@ body {
   align-items: center;
   padding: 135px 375px 0 375px;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 1919px) and (min-width: 1024px) {
+  .main {
+    padding: 135px 53px 0 53px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .main {
+    padding: 75px 21px 0 21px;
+  }
 }
