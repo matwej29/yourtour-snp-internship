@@ -1,6 +1,6 @@
 .card {
-  margin-bottom: 30px;
-  overflow: hidden;
+  position: relative;
+  /* overflow: hidden; */
   display: flex;
   width: 370px;
   height: 531px;
@@ -14,8 +14,6 @@
 }
 
 .card img {
-  /* transform: translateX(-360px); */
-  margin-left: -370px;
   z-index: -1;
   border-radius: 50px;
   transition: transform 300ms;
@@ -25,10 +23,24 @@
   transform: scale(1.2);
 }
 
+.card > .card-content{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .card-content {
+  height: calc(100% - 50px);
   margin: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
