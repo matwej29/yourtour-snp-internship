@@ -1,0 +1,3 @@
+.card-grid_type_one-column {
+  grid-template-columns: repeat(1, 1fr);
+}

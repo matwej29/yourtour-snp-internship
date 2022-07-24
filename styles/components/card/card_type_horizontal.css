@@ -1,9 +1,14 @@
 .card_type_horizontal {
-  width: 1170px;
+  flex: 1;
+  /* width: 1170px; */
   height: 567px;
   background: linear-gradient(
     270deg,
     rgba(0, 0, 0, 0) 0.01%,
     rgba(0, 0, 0, 0.2) 100%
   );
+}
+
+.card_type_horizontal .card-content__text-block {
+  max-width: 554px;
 }

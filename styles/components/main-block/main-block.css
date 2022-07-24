@@ -1,10 +1,11 @@
 .main-block {
+  width: 100%;
+
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 100px;
-  box-sizing: content-box;
 }
 
 .main-block-title {

@@ -8,7 +8,6 @@
 @import url("components/menu/menu.css");
 @import url("components/menu/menu-links.css");
 @import url("components/page-header/page-header.css");
-@import url("components/card/card.css");
 @import url("components/footer/footer.css");
 @import url("components/footer/footer-links.css");
 @import url("components/icons/arrow/arrow.css");
@@ -16,7 +15,9 @@
 @import url("components/icons/facebook/facebook.css");
 @import url("components/icons/vkontakte/vkontakte.css");
 @import url("components/tab/tab.css");
+@import url("components/card/card.css");
 @import url("components/card/card-grid.css");
+@import url("components/card/card-grid_type_one-column.css");
 @import url("components/card/card_type_horizontal.css");
 @import url("components/main-block/main-block.css");
 @import url("components/form/form.css");
@@ -54,8 +55,10 @@ body {
 
 .main {
   display: flex;
+  width: 100vw;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 135px 0;
+  padding: 135px 375px 0 375px;
+  box-sizing: border-box;
 }
