@@ -1,0 +1,11 @@
+@media screen and (max-width: 1023px) {
+  .photo-hide {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  .photo-hide {
+    display: none;
+  }
+}

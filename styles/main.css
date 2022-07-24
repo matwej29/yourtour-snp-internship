@@ -21,10 +21,10 @@
 @import url("components/main-block/main-block.css");
 @import url("components/form/form.css");
 @import url("components/link/link.css");
-@import url("components/photo/photo-n.css");
-@import url("components/photo/photo-m.css");
+@import url("components/photo/photo.css");
 @import url("components/photo/photo-row.css");
 @import url("components/photo/photo-block.css");
+@import url("components/photo/photo-hide.css");
 @import url("components/end-block/end-block.css");
 @import url("components/end-block/end-block__image.css");
 @import url("components/end-block/end-block__text.css");
