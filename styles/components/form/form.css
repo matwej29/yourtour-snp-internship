@@ -27,6 +27,22 @@
   gap: 10px;
 }
 
+.form-elements-line{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+}
+
+.form-checkbox-group{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+
 @media screen and (max-width: 1023px) {
   .form{
     padding: 20px;
