@@ -19,6 +19,18 @@
   outline: 0;
 }
 
+.form__input-selected{
+  color: var(--black);
+}
+
 .form__input::placeholder{
   color: var(--gray300);
+}
+
+.form__input[type="date"]{
+  font-family: inherit;
+}
+
+.form__input[type="date"]::placeholder{
+  color: red;
 }

@@ -1,10 +1,28 @@
-.tab__element:hover {
-  border-bottom: 2px solid var(--black);
-  padding-bottom: 6px;
+.tab__element {
+  margin: 0;
 }
 
 .tab__element__choosed {
   color: var(--orange200);
   border-bottom: 2px solid var(--orange200);
   padding-bottom: 6px;
+}
+
+@media screen and (min-width: 1023px) {
+  .tab__element:hover {
+    border-bottom: 2px solid var(--black);
+    padding-bottom: 6px;
+  }
+
+  .tab__element__choosed:hover {
+    border-bottom: 2px solid var(--orange200);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .tab__element__choosed {
+    padding-bottom: 0px;
+    line-height:normal;
+    align-self: center;
+  }
 }

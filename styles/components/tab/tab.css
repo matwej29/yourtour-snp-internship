@@ -4,7 +4,7 @@
   flex-direction: row;
   align-items: flex-start;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   column-gap: 30px;
   /* width: 700px; */
 }

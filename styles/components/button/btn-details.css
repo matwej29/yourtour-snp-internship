@@ -2,16 +2,19 @@
   margin-left: -20px;
   margin-bottom: -7px;
   justify-content: space-between;
+  align-items: center;
   padding: 7px 21px 7px 20px;
-  width: 199px;
+  gap: 16px;
   height: 42px;
   border-radius: 50px;
   background-color: transparent;
   background-size: contain;
 }
 
-.btn-details:hover {
-  background-color: var(--green400);
+@media screen and (min-width: 1023px) {
+  .btn-details:hover {
+    background-color: var(--green400);
+  }
 }
 
 .btn-details:active {

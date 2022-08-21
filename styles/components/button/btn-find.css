@@ -6,8 +6,10 @@
   border-radius: 10px;
 }
 
-.btn-find:hover {
-  background-color: var(--green300);
+@media screen and (min-width: 1023px) {
+  .btn-find:hover {
+    background-color: var(--green300);
+  }
 }
 
 .btn-find:active {

@@ -9,5 +9,14 @@
 }
 
 .main-block-title {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 100px;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1023px) {
+  .main-block-title{
+    margin-bottom: 50px;
+  }
 }

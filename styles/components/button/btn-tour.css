@@ -5,10 +5,13 @@
   border-radius: 10px;
 }
 
-.btn-tour:hover {
-  background-color: var(--orange200);
-  color: var(--white);
-  border-color: var(--orange200);
+@media screen and (min-width: 1023px) {
+  .btn-tour:hover {
+    background-color: var(--orange200);
+    color: var(--white);
+    border-color: var(--orange200);
+    cursor: pointer;
+  }
 }
 
 .btn-tour:active {

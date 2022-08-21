@@ -1,5 +1,6 @@
 @import url("./menu__/menu__logo.css");
 .menu {
+  box-sizing: border-box;
   position: absolute;
   width: 100vw;
   height: 88px;
@@ -9,4 +10,11 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .menu {
+    justify-content: space-between;
+    padding: 33px 20px 33px 20px;
+  }
 }

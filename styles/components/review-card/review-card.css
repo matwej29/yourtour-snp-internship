@@ -7,3 +7,9 @@
   padding: 40px;
   gap: 70px;
 }
+
+@media screen and (max-width: 1023px) {
+  .review-card{
+    padding: 20px;
+  }
+}
