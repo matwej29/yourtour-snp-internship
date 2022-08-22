@@ -33,3 +33,5 @@ jobs:
           path: build
       - name: Deploy GitHub Pages site
         uses: actions/deploy-pages@v1.0.9
+        with:
+          token: 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
