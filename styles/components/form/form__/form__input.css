@@ -45,6 +45,14 @@
   text-transform: uppercase;
 }
 
+.form__input[type="tel"]:valid{
+  border: 1px solid var(--beige200);
+}
+
+.form__input[type="tel"]:invalid{
+  border: 1px solid red;
+}
+
 @media screen and (max-width: 1024px) {
   .form__input {
     height: 43px;
