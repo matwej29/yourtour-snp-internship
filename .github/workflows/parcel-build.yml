@@ -1,6 +1,9 @@
 # This is a basic workflow to help you get started with Actions
 
 name: CI
+permissions:
+  pages: write
+  id-token: write
 
 # Controls when the workflow will run
 on:
@@ -33,5 +36,3 @@ jobs:
           path: build
       - name: Deploy GitHub Pages site
         uses: actions/deploy-pages@v1.0.9
-        with:
-          token: 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
