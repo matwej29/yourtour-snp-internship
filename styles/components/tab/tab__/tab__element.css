@@ -22,7 +22,8 @@
 @media screen and (max-width: 1023px) {
   .tab__element__choosed {
     padding-bottom: 0px;
-    line-height:normal;
+    line-height: normal;
     align-self: center;
+    margin-top: 1px;
   }
 }

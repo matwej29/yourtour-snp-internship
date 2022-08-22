@@ -11,3 +11,9 @@
   border-radius: 10px;
   font-family: inherit;
 }
+
+@media screen and (max-width: 1023px) {
+  .form__textarea{
+    resize: none;
+  }
+}
