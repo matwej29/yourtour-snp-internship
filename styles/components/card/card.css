@@ -68,6 +68,7 @@
   .card {
     height: 318px;
     border-radius: 20px;
+    padding: 25px;
   }
 
   .card img {

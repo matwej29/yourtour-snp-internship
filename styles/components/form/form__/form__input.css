@@ -10,27 +10,44 @@
   appearance: none;
 }
 
-.form__input:hover{
+.form__input:hover {
   background: var(--beige200);
 }
 
-.form__input:focus{
+.form__input:focus {
   border: 1px solid var(--gray300);
   outline: 0;
 }
 
-.form__input-selected{
+.form__input-selected {
   color: var(--black);
 }
 
-.form__input::placeholder{
+.form__input::placeholder {
   color: var(--gray300);
 }
 
-.form__input[type="date"]{
+.form__input[type="date"] {
   font-family: inherit;
 }
 
-.form__input[type="date"]::placeholder{
-  color: red;
+.form__input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+}
+
+.form__input[type="date"]::-webkit-datetime-edit-month-field {
+  text-transform: uppercase;
+}
+.form__input[type="date"]::-webkit-datetime-edit-day-field {
+  text-transform: uppercase;
+}
+.form__input[type="date"]::-webkit-datetime-edit-year-field {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1024px) {
+  .form__input {
+    height: 43px;
+    padding: 10px;
+  }
 }

@@ -35,6 +35,7 @@
   }
 
   .page-header-content {
+    width: 260px;
     margin: 140px 0 52px 0;
   }
 }

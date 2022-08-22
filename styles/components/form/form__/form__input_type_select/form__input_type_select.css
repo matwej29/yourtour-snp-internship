@@ -1,5 +1,4 @@
 .form__input_type_select {
-  color: var(--gray300);
   appearance: none;
   background-image: url(./select.svg);
   background-repeat: no-repeat;
@@ -10,4 +9,12 @@
   background-image: url(./select.svg);
   background-repeat: no-repeat;
   background-position: 95%;
+}
+
+.form__input_type_select:required:invalid{
+  color: var(--gray300);
+}
+
+.form__input_type_select option{
+  color: var(--black);
 }

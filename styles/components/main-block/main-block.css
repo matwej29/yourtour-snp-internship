@@ -16,7 +16,11 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .main-block-title{
+  .main-block {
+    margin-bottom: 75px;
+  }
+
+  .main-block-title {
     margin-bottom: 50px;
   }
 }
