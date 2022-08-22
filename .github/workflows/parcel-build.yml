@@ -28,8 +28,8 @@ jobs:
           yarn run build
 
       - name: Upload GitHub Pages artifact
-      - uses: actions/upload-pages-artifact@v1.0.3
+        uses: actions/upload-pages-artifact@v1.0.3
         with:
           path: build
       - name: Deploy GitHub Pages site
-      - uses: actions/deploy-pages@v1.0.9
+        uses: actions/deploy-pages@v1.0.9
