@@ -1,8 +1,6 @@
-@import url("./menu__/menu__logo.css");
-@import url("./fixed-menu.css");
-.menu {
+.fixed-menu {
   box-sizing: border-box;
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 88px;
   left: 0px;
@@ -11,11 +9,23 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  background: rgba(243, 239, 232, 0.6);
+  backdrop-filter: blur(54px);
+  z-index: 1;
 }
 
 @media screen and (max-width: 1023px) {
-  .menu {
+  .fixed-menu {
     justify-content: space-between;
     padding: 33px 20px 33px 20px;
   }
+}
+
+.fixed-menu .menu__logo {
+  background-image: url('./menu__/YourTour-black.svg');
+}
+
+.fixed-menu a,
+.fixed-menu p {
+  color: var(--black);
 }

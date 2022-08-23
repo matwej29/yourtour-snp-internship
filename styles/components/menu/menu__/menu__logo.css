@@ -1,7 +1,10 @@
-.menu__logo{
-  width: 181.24px;
-  height: 30.24px;
-  fill: black;
+.menu__logo {
+  height: 30px;
+  width: 181px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("./YourTour.svg");
 }
 
 @media screen and (max-width: 1023px) {

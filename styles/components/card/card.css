@@ -22,7 +22,6 @@
   object-fit: cover;
   width: 100%;
   z-index: -1;
-  border-radius: 50px;
   transition: transform 300ms;
 }
 
@@ -52,7 +51,7 @@
   color: var(--white);
 }
 
-@media screen and (min-width: 1023px){
+@media screen and (min-width: 1024px){
   .card:hover{
     cursor: pointer;
   }

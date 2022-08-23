@@ -65,17 +65,14 @@
     <main>
       <div class="page-header">
         <div class="menu">
-          <img
-            class="menu__logo"
-            src="./styles/components/menu/menu__/YourTour.svg"
-          />
+          <div class="menu__logo"></div>
           <div class="menu-links">
             <a href="#" class="menu-links__link p_n p_white">Туры</a>
             <a href="#" class="menu-links__link p_n p_white">Создать тур</a>
             <a href="#" class="menu-links__link p_n p_white">Отзывы</a>
             <a href="#" class="menu-links__link p_n p_white">Истории</a>
           </div>
-          <div class="menu__number p_n p_white">+7 999 999 99 99</div>
+          <p class="menu__number p_n p_white">+7 999 999 99 99</p>
         </div>
         <div class="page-header-content">
           <h1 class="p_white text-center">
@@ -629,9 +626,21 @@
         </div>
       </div>
     </footer>
+    <script src="./styles/components/form/form__/maskPhone.js"></script>
+    <script>
+      maskPhone("input[type='tel']");
+    </script>
+    <script>
+      const menu = document.getElementsByClassName("menu")[0];
+      setInterval(() => {
+        if (window.pageYOffset >= 450) {
+          menu.classList.remove("menu");
+          menu.classList.add("fixed-menu");
+        } else {
+          menu.classList.remove("fixed-menu");
+          menu.classList.add("menu");
+        }
+      }, 100);
+    </script>
   </body>
-  <script src="./styles/components/form/form__/maskPhone.js"></script>
-  <script>
-    maskPhone("input[type='tel']");
-  </script>
 </html>
