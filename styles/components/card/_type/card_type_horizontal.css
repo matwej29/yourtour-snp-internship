@@ -9,7 +9,7 @@
   );
 }
 
-.card_type_horizontal .card-content__text-block {
+.card_type_horizontal .card__content__text-block {
   max-width: 554px;
 }
 
