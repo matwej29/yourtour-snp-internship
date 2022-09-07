@@ -9,22 +9,23 @@
 @import url("components/page-header/page-header.css");
 @import url("components/footer/footer.css");
 @import url("components/footer/footer-links.css");
+@import url("components/footer/footer-links__/footer-links-link.css");
 @import url("components/icons/arrow/arrow.css");
 @import url("components/icons/instagram/instagram.css");
 @import url("components/icons/facebook/facebook.css");
 @import url("components/icons/vkontakte/vkontakte.css");
 @import url("components/tab/tab.css");
 @import url("components/card/card.css");
-@import url("components/card/card-grid.css");
-@import url("components/card/card-grid_type_one-column.css");
-@import url("components/card/card_type_horizontal.css");
+@import url("components/card-grid/card-grid.css");
+@import url("components/card-grid/_type/card-grid_type_one-column.css");
+@import url("components/card/_type/card_type_horizontal.css");
 @import url("components/main-block/main-block.css");
 @import url("components/form/form.css");
 @import url("components/link/link.css");
 @import url("components/photo/photo.css");
 @import url("components/photo/photo-row.css");
 @import url("components/photo/photo-block.css");
-@import url("components/photo/photo-hide.css");
+@import url("components/photo/photo_hide.css");
 @import url("components/end-block/end-block.css");
 @import url("components/end-block/end-block__image.css");
 @import url("components/end-block/end-block__text.css");
@@ -68,18 +69,18 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 135px 375px 0 375px;
+  padding: 0 375px 0 375px;
   box-sizing: border-box;
 }
 
 @media screen and (max-width: 1919px) and (min-width: 1024px) {
   .main {
-    padding: 135px 53px 0 53px;
+    padding: 0 53px 0 53px;
   }
 }
 
 @media screen and (max-width: 1023px) {
   .main {
-    padding: 75px 21px 0 21px;
+    padding: 0 21px 0 21px;
   }
 }

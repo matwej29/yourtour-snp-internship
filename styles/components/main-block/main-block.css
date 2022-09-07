@@ -8,8 +8,9 @@
   margin-bottom: 100px;
 }
 
-.main-block-title {
+.main-block__title {
   display: flex;
+  max-width: 740px;
   flex-direction: column;
   margin-bottom: 100px;
   gap: 20px;
@@ -20,7 +21,7 @@
     margin-bottom: 75px;
   }
 
-  .main-block-title {
+  .main-block__title {
     margin-bottom: 50px;
   }
 }

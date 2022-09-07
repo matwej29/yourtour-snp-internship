@@ -2,7 +2,7 @@
   margin: 0;
 }
 
-.tab__element__choosed {
+.tab__element_choosed {
   color: var(--orange200);
   border-bottom: 2px solid var(--orange200);
   padding-bottom: 6px;
@@ -14,13 +14,13 @@
     padding-bottom: 6px;
   }
 
-  .tab__element__choosed:hover {
+  .tab__element_choosed:hover {
     border-bottom: 2px solid var(--orange200);
   }
 }
 
 @media screen and (max-width: 1023px) {
-  .tab__element__choosed {
+  .tab__element_choosed {
     padding-bottom: 0px;
     line-height: normal;
     align-self: center;
