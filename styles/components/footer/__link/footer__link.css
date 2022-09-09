@@ -1,5 +1,5 @@
 @media screen and (min-width: 1024px) {
-  .footer-links-link__text:hover {
+  .footer__text:hover {
     border-bottom: 1px solid var(--black);
   }
 }

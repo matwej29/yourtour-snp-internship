@@ -1,4 +1,4 @@
-.footer-links-link {
+.footer__list-item {
   flex: 1;
   display: flex;
   flex-direction: row;
@@ -9,7 +9,7 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .footer-links-link {
+  .footer__list-item {
     gap: 5px;
   }
 }

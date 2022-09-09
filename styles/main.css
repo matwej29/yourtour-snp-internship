@@ -8,8 +8,9 @@
 @import url("components/menu/menu-links.css");
 @import url("components/page-header/page-header.css");
 @import url("components/footer/footer.css");
-@import url("components/footer/footer-links.css");
-@import url("components/footer/footer-links__/footer-links-link.css");
+@import url("components/footer/__list/footer__list.css");
+@import url("components/footer/__list-item/footer__list-item.css");
+@import url("components/footer/__link/footer__link.css");
 @import url("components/icons/arrow/arrow.css");
 @import url("components/icons/instagram/instagram.css");
 @import url("components/icons/facebook/facebook.css");
