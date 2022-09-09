@@ -1,8 +1,9 @@
 .photo {
   flex: 1;
   height: 301px;
-  background-size: cover;
-  background-position: center;
+  width: 1px;
+  object-fit: cover;
+  object-position: center;
   border-radius: 50px;
 }
 

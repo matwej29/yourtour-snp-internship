@@ -1,4 +1,4 @@
-@import url("./menu__/menu__logo.css");
+@import url("./__logo/menu__logo.css");
 @import url("./fixed-menu.css");
 .menu {
   box-sizing: border-box;

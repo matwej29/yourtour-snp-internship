@@ -25,7 +25,7 @@
 @import url("components/photo/photo.css");
 @import url("components/photo/photo-row.css");
 @import url("components/photo/photo-block.css");
-@import url("components/photo/photo_hide.css");
+@import url("components/photo/_hide/photo_hide.css");
 @import url("components/end-block/end-block.css");
 @import url("components/end-block/end-block__image.css");
 @import url("components/end-block/end-block__text.css");
