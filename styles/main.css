@@ -31,11 +31,11 @@
 @import url("components/end-block/end-block__image.css");
 @import url("components/end-block/end-block__text.css");
 @import url("components/review-card/review-card.css");
+@import url("components/review-card/__photo/review-card-title__photo.css");
+@import url("components/review-card/__subtitle/review-card__subtitle.css");
+@import url("components/review-card/__text/review-card__text.css");
+@import url("components/review-card/__title/review-card__title.css");
 @import url("components/review-card/review-card-grid.css");
-@import url("components/review-card/review-card-title.css");
-@import url("components/review-card/review-card-title__photo.css");
-@import url("components/review-card/review-card-title__text.css");
-@import url("components/review-card/review-card__text.css");
 
 :root  {
   --black: #1b1f2b;

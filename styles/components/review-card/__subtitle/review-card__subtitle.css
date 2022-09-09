@@ -1,4 +1,4 @@
-.review-card-title__text {
+.review-card__subtitle {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
