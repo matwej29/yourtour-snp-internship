@@ -8,12 +8,6 @@
   );
 }
 
-/* .card_type_horizontal .card__content__text-block {
-  max-width: 554px;
-} */
-
-
-
 @media screen and (max-width: 1023px) {
   .card_type_horizontal{
     height: 455px;
