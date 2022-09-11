@@ -197,18 +197,24 @@
         <form class="form">
           <div class="form__line">
             <div class="form__element">
-              <p class="p_n p_clear">Имя</p>
+              <label for="name"><span class="p_n p_clear">Имя</span></label>
               <input
                 type="text"
                 class="form__input p_n"
-                name=""
+                name="name"
                 id=""
                 placeholder="Введите ваше имя"
               />
             </div>
             <div class="form__element">
-              <p class="p_n p_clear">Направление</p>
-              <select class="form__input form__input_type_select p_n" required>
+              <label for="destination"
+                ><span class="p_n p_clear">Направление</span></label
+              >
+              <select
+                name="destination"
+                class="form__input form__input_type_select p_n"
+                required
+              >
                 <option value="" disabled selected hidden>
                   Выберите пункт
                 </option>
@@ -220,21 +226,23 @@
 
           <div class="form__line">
             <div class="form__element">
-              <p class="p_n p_clear">Email</p>
+              <label for="email"><span class="p_n p_clear">Email</span></label>
               <input
                 type="email"
                 class="form__input p_n"
-                name=""
+                name="email"
                 id=""
                 placeholder="Введите ваш email"
               />
             </div>
             <div class="form__element">
-              <p class="p_n p_clear">Телефон</p>
+              <label for="phone"
+                ><span class="p_n p_clear">Телефон</span></label
+              >
               <input
                 type="tel"
                 class="form__input p_n"
-                name=""
+                name="phone"
                 id=""
                 placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _"
                 pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}"
@@ -246,22 +254,26 @@
 
           <div class="form__line">
             <div class="form__element">
-              <p class="p_n p_clear">Дата от</p>
+              <label for="date-from"
+                ><span class="p_n p_clear">Дата от</span></label
+              >
               <input
                 type="text"
                 class="form__input p_n"
-                name=""
+                name="date-from"
                 id=""
                 placeholder="ДД.ММ.ГГГГ"
                 onfocus="(this.type='date')"
               />
             </div>
             <div class="form__element">
-              <p class="p_n p_clear">Дата до</p>
+              <label for="data-to"
+                ><span class="p_n p_clear">Дата до</span></label
+              >
               <input
                 type="text"
                 class="form__input p_n"
-                name=""
+                name="date-to"
                 id=""
                 placeholder="ДД.ММ.ГГГГ"
                 onfocus="(this.type='date')"
@@ -270,9 +282,11 @@
           </div>
 
           <div class="form__element">
-            <p class="p_n p_clear">Комментарий</p>
+            <label for="commantary"
+              ><span class="p_n p_clear">Комментарий</span></label
+            >
             <textarea
-              name=""
+              name="commantary"
               id=""
               class="form__input form__textarea p_n"
             ></textarea>
@@ -282,8 +296,13 @@
             <p class="p_n p_clear">Вам есть 18 лет?</p>
             <div class="form-elements-line">
               <div class="form__input_type_radio">
-                <input type="radio" name="age" value="yes" class="p_n" />
-                <p class="p_n p_clear">Да</p>
+                <input
+                  type="radio"
+                  name="age"
+                  value="yes"
+                  class="form__input_type_radio p_n"
+                />
+                <label><span class="p_n p_clear">Да</span></label>
               </div>
               <div class="form__input_type_radio">
                 <input
@@ -292,7 +311,7 @@
                   value="no"
                   class="form__input_type_radio p_n"
                 />
-                <p class="p_n p_clear">Нет</p>
+                <label for="age"> <span class="p_n p_clear">Нет</span></label>
               </div>
             </div>
           </div>
@@ -304,10 +323,12 @@
                 name="agree"
                 class="form__input_type_checkbox"
               />
-              <p class="p_n p_gray p_clear">
-                Нажимая кнопку, я принимаю условия
+              <label for="agree">
+                <span class="p_n p_gray p_clear">
+                  Нажимая кнопку, я принимаю условия
+                </span>
                 <a href="#" class="link">Лицензионного договора</a>
-              </p>
+              </label>
             </div>
           </div>
 
