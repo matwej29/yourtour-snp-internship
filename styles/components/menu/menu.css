@@ -1,5 +1,5 @@
 @import url("./__logo/menu__logo.css");
-@import url("./fixed-menu.css");
+@import url("./_fixed/menu_fixed.css");
 .menu {
   box-sizing: border-box;
   position: absolute;

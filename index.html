@@ -627,17 +627,6 @@
     <script src="./styles/components/form/__input/maskPhone.js">
       maskPhone("input[type='tel']");
     </script>
-    <script>
-      const menu = document.getElementsByClassName("menu")[0];
-      setInterval(() => {
-        if (window.pageYOffset >= 450) {
-          menu.classList.remove("menu");
-          menu.classList.add("fixed-menu");
-        } else {
-          menu.classList.remove("fixed-menu");
-          menu.classList.add("menu");
-        }
-      }, 100);
-    </script>
+    <script src="index.js" type="module"></script>
   </body>
 </html>

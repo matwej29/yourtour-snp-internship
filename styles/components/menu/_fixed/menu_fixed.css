@@ -1,4 +1,4 @@
-.fixed-menu {
+.menu_fixed {
   box-sizing: border-box;
   position: fixed;
   width: 100vw;
@@ -15,17 +15,17 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .fixed-menu {
+  .menu_fixed {
     justify-content: space-between;
     padding: 33px 20px 33px 20px;
   }
 }
 
-.fixed-menu .menu__logo {
-  background-image: url('./__logo/YourTour-black.svg');
+.menu_fixed .menu__logo {
+  background-image: url('../__logo/YourTour-black.svg');
 }
 
-.fixed-menu a,
-.fixed-menu p {
+.menu_fixed a,
+.menu_fixed p {
   color: var(--black);
 }
