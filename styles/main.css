@@ -5,7 +5,8 @@
 @import url("components/button/btn-find.css");
 @import url("components/button/btn-reset.css");
 @import url("components/menu/menu.css");
-@import url("components/menu/menu-links.css");
+@import url("components/menu/__list/menu__list.css");
+@import url("components/menu/__link/menu__link.css");
 @import url("components/page-header/page-header.css");
 @import url("components/footer/footer.css");
 @import url("components/footer/__list/footer__list.css");
@@ -24,8 +25,8 @@
 @import url("components/form/form.css");
 @import url("components/link/link.css");
 @import url("components/photo/photo.css");
-@import url("components/photo/photo-row.css");
-@import url("components/photo/photo-block.css");
+@import url("components/photo/__elem/photo__elem.css");
+@import url("components/photo/__row/photo__row.css");
 @import url("components/photo/_hide/photo_hide.css");
 @import url("components/end-block/end-block.css");
 @import url("components/end-block/end-block__image.css");

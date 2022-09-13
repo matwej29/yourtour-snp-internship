@@ -1,15 +1,16 @@
 .photo {
-  flex: 1;
-  height: 301px;
-  width: 1px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 50px;
+  padding-inline-start: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 0 30px;
+  gap: 30px;
 }
 
 @media screen and (max-width: 1023px) {
   .photo{
-    height: 110px;
-    border-radius: 20px;
+    gap: 18px
   }
 }
