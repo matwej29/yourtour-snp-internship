@@ -1,0 +1,4 @@
+.card__links {
+  display: flex;
+  gap: 35px;
+}

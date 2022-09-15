@@ -1,0 +1,11 @@
+.card__img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  min-width: 100%;
+  z-index: -1;
+  transition: transform 300ms;
+}

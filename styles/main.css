@@ -18,6 +18,11 @@
 @import url("components/icons/vkontakte/vkontakte.css");
 @import url("components/tab/tab.css");
 @import url("components/card/card.css");
+@import url("components/card/__content/card__content.css");
+@import url("components/card/__footer/card__footer.css");
+@import url("components/card/__img/card__img.css");
+@import url("components/card/__link/card__link.css");
+@import url("components/card/__links/card__links.css");
 @import url("components/card-grid/card-grid.css");
 @import url("components/card-grid/_type/card-grid_type_one-column.css");
 @import url("components/card/_type/card_type_horizontal.css");
