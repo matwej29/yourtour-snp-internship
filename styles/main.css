@@ -31,8 +31,9 @@
 @import url("components/link/link.css");
 @import url("components/photo/photo.css");
 @import url("components/photo/__elem/photo__elem.css");
+@import url("components/photo/__elem/_hide/-medium/photo__elem_hide-medium.css");
+@import url("components/photo/__elem/_hide/-mobile/photo__elem_hide-mobile.css");
 @import url("components/photo/__row/photo__row.css");
-@import url("components/photo/_hide/photo_hide.css");
 @import url("components/end-block/end-block.css");
 @import url("components/end-block/end-block__image.css");
 @import url("components/end-block/end-block__text.css");

@@ -1,0 +1,5 @@
+@media screen and (max-width: 1919px) {
+  .photo__elem_hide-medium {
+    display: none;
+  }
+}
