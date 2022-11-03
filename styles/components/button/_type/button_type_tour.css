@@ -1,4 +1,4 @@
-.btn-tour {
+.button_type_tour {
   width: 118px;
   height: 34px;
   background-color: var(--white);
@@ -6,7 +6,7 @@
 }
 
 @media screen and (min-width: 1023px) {
-  .btn-tour:hover {
+  .button_type_tour:hover {
     background-color: var(--orange200);
     color: var(--white);
     border-color: var(--orange200);
@@ -14,7 +14,7 @@
   }
 }
 
-.btn-tour:active {
+.button_type_tour:active {
   background-color: var(--orange100);
   color: var(--black);
 }

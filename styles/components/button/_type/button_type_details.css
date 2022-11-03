@@ -1,4 +1,4 @@
-.btn-details {
+.button_type_details {
   margin-left: -20px;
   margin-bottom: -7px;
   justify-content: space-between;
@@ -12,11 +12,11 @@
 }
 
 @media screen and (min-width: 1023px) {
-  .btn-details:hover {
+  .button_type_details:hover {
     background-color: var(--green400);
   }
 }
 
-.btn-details:active {
+.button_type_details:active {
   background-color: var(--orange200);
 }

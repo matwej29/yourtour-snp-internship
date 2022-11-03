@@ -1,4 +1,4 @@
-.btn-reset {
+.button_type_reset {
   width: 235px;
   height: 58px;
   background-color: var(--green100);
@@ -7,10 +7,10 @@
 }
 
 @media screen and (min-width: 1023px) {
-  .btn-reset:hover {
+  .button_type_reset:hover {
     background-color: var(--gray100);
   }
 }
-.btn-reset:active {
+.button_type_reset:active {
   background-color: var(--gray200);
 }

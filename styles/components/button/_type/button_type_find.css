@@ -1,4 +1,4 @@
-.btn-find {
+.button_type_find {
   color: var(--white);
   width: 235px;
   height: 58px;
@@ -7,11 +7,11 @@
 }
 
 @media screen and (min-width: 1023px) {
-  .btn-find:hover {
+  .button_type_find:hover {
     background-color: var(--green300);
   }
 }
 
-.btn-find:active {
+.button_type_find:active {
   background-color: var(--green200);
 }

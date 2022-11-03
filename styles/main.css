@@ -1,9 +1,9 @@
 @import url("components/typography.css");
-@import url("components/button/btn.css");
-@import url("components/button/btn-tour.css");
-@import url("components/button/btn-details.css");
-@import url("components/button/btn-find.css");
-@import url("components/button/btn-reset.css");
+@import url("components/button/button.css");
+@import url("components/button/_type/button_type_tour.css");
+@import url("components/button/_type/button_type_details.css");
+@import url("components/button/_type/button_type_find.css");
+@import url("components/button/_type/button_type_reset.css");
 @import url("components/menu/menu.css");
 @import url("components/menu/__list/menu__list.css");
 @import url("components/menu/__link/menu__link.css");
