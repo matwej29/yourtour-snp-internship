@@ -1,12 +1,3 @@
-/* p {
-  color: var(--black);
-}
-
-a {
-  color: var(--black);
-  text-decoration: none;
-} */
-
 .p_b {
   font-weight: 700;
   font-size: 23px;
@@ -27,11 +18,11 @@ a {
 }
 
 .p_white {
-  color: var(--white);
+  color: var(--white) !important;
 }
 
 .p_gray {
-  color: var(--gray300);
+  color: var(--gray300) !important;
 }
 
 .p_clear{
