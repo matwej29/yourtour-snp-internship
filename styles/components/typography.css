@@ -18,11 +18,15 @@
 }
 
 .p_white {
-  color: var(--white) !important;
+  color: var(--white);
 }
 
 .p_gray {
-  color: var(--gray300) !important;
+  color: var(--gray300);
+}
+
+.p_black{
+  color: var(--black)
 }
 
 .p_clear-margin{
