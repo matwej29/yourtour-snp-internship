@@ -25,7 +25,10 @@
   background-image: url('../__logo/YourTour-black.svg');
 }
 
-.menu_fixed a,
-.menu_fixed p {
+.menu_fixed .menu__link {
   color: var(--black);
+}
+
+.menu_fixed .menu__link:hover {
+  border-bottom: 1px solid var(--black) !important;
 }

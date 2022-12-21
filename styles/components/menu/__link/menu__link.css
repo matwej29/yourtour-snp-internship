@@ -3,6 +3,7 @@
 }
 
 .menu__link:hover {
+  padding-top: 1px;
   border-bottom: 1px solid var(--white);
 }
 
