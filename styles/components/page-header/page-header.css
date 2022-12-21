@@ -20,7 +20,8 @@
 
 .page-header__content {
   width: 600px;
-  margin: 207px 0 119px 0;
+  margin: 209px 0 119px 0;
+  gap: 50px;
   /* height: 100%; */
   flex-wrap: wrap;
   display: flex;

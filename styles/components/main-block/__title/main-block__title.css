@@ -1,0 +1,14 @@
+.main-block__title {
+  display: flex;
+  /* max-width: 740px; */
+  flex-direction: column;
+  margin-bottom: 100px;
+  gap: 35px;
+}
+
+@media screen and (max-width: 1023px) {
+  .main-block__title {
+    margin-bottom: 50px;
+    gap: 30px;
+  }
+}

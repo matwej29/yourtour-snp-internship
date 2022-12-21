@@ -50,6 +50,14 @@
       type="image/png"
       sizes="76x76"
       href="./icons/icons8-around-the-globe-pastel-76.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+    </style>
     <title>YourTour</title>
   </head>
   <body>
@@ -84,9 +92,9 @@
             <h1 class="h1 p_white text-center">
               Идеальные путешествия существуют
             </h1>
-            <p class="p_n p_white text-center">
-              Идейные соображения высшего порядка, а также рамки и место
-              обучения кадров
+            <p class="p_n p_white text-center p_clear-margin">
+              Идейные соображения высшего порядка, 
+              а также рамки и место обучения кадров
             </p>
             <button class="button button_type_tour p_s">Найти тур</button>
           </div>
@@ -204,8 +212,8 @@
         <div class="main-block__title text-center">
           <h2 class="h2">Собери свой тур</h2>
           <p class="p_s p_gray p_clear-margin">
-            Идейные соображения высшего порядка, а также рамки и место обучения
-            кадров
+            Идейные соображения высшего порядка, <br />
+            а также рамки и место обучения кадров
           </p>
         </div>
 
@@ -292,7 +300,7 @@
 
           <div class="form__element">
             <p class="p_n p_clear-margin">Вам есть 18 лет?</p>
-            <div class="form-elements-line">
+            <div class="form__elements-line">
               <label class="form__input_type_radio p_n p_clear-margin">
                 <input
                   type="radio"
@@ -313,22 +321,20 @@
           </div>
 
           <div class="form__element">
-            <div class="form-checkbox-group">
+            <label class="form__checkbox-group">
               <input
                 type="checkbox"
                 id="agree"
                 class="form__input_type_checkbox" />
-              <label for="agree">
-                <span class="p_n p_gray p_clear-margin">
-                  Нажимая кнопку, я принимаю условия
-                </span>
+              <span class="p_n p_gray p_clear-margin">
+                Нажимая кнопку, я принимаю условия
                 <a href="#" class="link p_n p_black">Лицензионного договора</a>
-              </label>
-            </div>
+              </span>
+            </label>
           </div>
 
           <div class="form__element">
-            <div class="form-elements-line">
+            <div class="form__elements-line">
               <button class="button button_type_find p_n" type="submit">
                 Найти тур
               </button>
@@ -342,10 +348,13 @@
 
       <section class="main-block">
         <div class="main-block__title text-center">
-          <h2 class="h2">Отзывы наших путешественников</h2>
+          <h2 class="h2">
+            Отзывы наших <br />
+            путешественников
+          </h2>
           <p class="p_s p_gray p_clear-margin">
-            Идейные соображения высшего порядка, а также рамки и место обучения
-            кадров
+            Идейные соображения высшего порядка, <br />
+            а также рамки и место обучения кадров
           </p>
         </div>
         <div class="review-card-grid">
@@ -360,7 +369,7 @@
             <div class="review-card__title">
               <div class="review-card__subtitle">
                 <h3 class="h3">Мария</h3>
-                <p class="p_n p_gray">Тур: Вдали от дома</p>
+                <p class="p_n p_gray p_clear-margin">Тур: Вдали от дома</p>
               </div>
               <img
                 class="review-card__photo"
@@ -384,7 +393,7 @@
             <div class="review-card__title">
               <div class="review-card__subtitle">
                 <h3 class="h3">Павел</h3>
-                <p class="p_n p_gray">Тур: Путешествие в горы</p>
+                <p class="p_n p_gray p_clear-margin">Тур: Путешествие в горы</p>
               </div>
               <img
                 class="review-card__photo"
@@ -398,70 +407,76 @@
         <div class="main-block__title text-center">
           <h2 class="h2">Фотографии путешествий</h2>
           <p class="p_s p_gray p_clear-margin">
-            Идейные соображения высшего порядка, а также рамки и место обучения
-            кадров
+            Идейные соображения высшего порядка, <br />
+            а также рамки и место обучения кадров
           </p>
         </div>
 
-        <ul class="photo">
-          <ul class="photo__row">
-            <img
-              class="photo__elem"
-              src="./styles/images/travel photo-1.jpg"
-              alt="travel photo-1" />
-            <img
-              class="photo__elem photo__elem_hide-medium"
-              src="./styles/images/travel photo-2.jpg"
-              alt="travel photo-2" />
-            <img
-              class="photo__elem photo__elem_hide-mobile"
-              src="./styles/images/travel photo-3.jpg"
-              alt="travel photo-3" />
-            <img
-              class="photo__elem"
-              src="./styles/images/travel photo-4.jpg"
-              alt="travel photo-4" />
-          </ul>
-          <ul class="photo__row">
-            <img
-              class="photo__elem"
-              src="./styles/images/travel photo-5.jpg"
-              alt="travel photo-5" />
-            <img
-              class="photo__elem photo__elem_hide-mobile"
-              src="./styles/images/travel photo-6.jpg"
-              alt="travel photo-6" />
-            <img
-              class="photo__elem photo__elem_hide-medium"
-              src="./styles/images/travel photo-7.jpg"
-              alt="travel photo-7" />
-            <img
-              class="photo__elem"
-              src="./styles/images/travel photo-8.jpg"
-              alt="travel photo-8" />
-            <img
-              class="photo__elem"
-              src="./styles/images/travel photo-13.jpg"
-              alt="travel photo-13" />
-          </ul>
-          <ul class="photo__row">
-            <img
-              class="photo__elem"
-              src="./styles/images/travel photo-9.jpg"
-              alt="travel photo-9" />
-            <img
-              class="photo__elem"
-              src="./styles/images/travel photo-10.jpg"
-              alt="travel photo-10" />
-            <img
-              class="photo__elem photo__elem_hide-medium"
-              src="./styles/images/travel photo-11.jpg"
-              alt="travel photo-11" />
-            <img
-              class="photo__elem photo__elem_hide-mobile"
-              src="./styles/images/travel photo-12.jpg"
-              alt="travel photo-12" />
-          </ul>
+        <ul class="list photo">
+          <li>
+            <ul class="list photo__row">
+              <img
+                class="photo__elem"
+                src="./styles/images/travel photo-1.jpg"
+                alt="travel photo-1" />
+              <img
+                class="photo__elem photo__elem_hide-medium"
+                src="./styles/images/travel photo-2.jpg"
+                alt="travel photo-2" />
+              <img
+                class="photo__elem photo__elem_hide-mobile"
+                src="./styles/images/travel photo-3.jpg"
+                alt="travel photo-3" />
+              <img
+                class="photo__elem"
+                src="./styles/images/travel photo-4.jpg"
+                alt="travel photo-4" />
+            </ul>
+          </li>
+          <li>
+            <ul class="list photo__row">
+              <img
+                class="photo__elem"
+                src="./styles/images/travel photo-5.jpg"
+                alt="travel photo-5" />
+              <img
+                class="photo__elem photo__elem_hide-mobile"
+                src="./styles/images/travel photo-6.jpg"
+                alt="travel photo-6" />
+              <img
+                class="photo__elem photo__elem_hide-medium"
+                src="./styles/images/travel photo-7.jpg"
+                alt="travel photo-7" />
+              <img
+                class="photo__elem"
+                src="./styles/images/travel photo-8.jpg"
+                alt="travel photo-8" />
+              <img
+                class="photo__elem"
+                src="./styles/images/travel photo-13.jpg"
+                alt="travel photo-13" />
+            </ul>
+          </li>
+          <li>
+            <ul class="list photo__row">
+              <img
+                class="photo__elem"
+                src="./styles/images/travel photo-9.jpg"
+                alt="travel photo-9" />
+              <img
+                class="photo__elem"
+                src="./styles/images/travel photo-10.jpg"
+                alt="travel photo-10" />
+              <img
+                class="photo__elem photo__elem_hide-medium"
+                src="./styles/images/travel photo-11.jpg"
+                alt="travel photo-11" />
+              <img
+                class="photo__elem photo__elem_hide-mobile"
+                src="./styles/images/travel photo-12.jpg"
+                alt="travel photo-12" />
+            </ul>
+          </li>
         </ul>
       </section>
 
@@ -469,8 +484,8 @@
         <div class="main-block__title text-center">
           <h2 class="h2">Истории путешествий</h2>
           <p class="p_s p_gray p_clear-margin">
-            Идейные соображения высшего порядка, а также рамки и место обучения
-            кадров
+            Идейные соображения высшего порядка, <br />
+            а также рамки и место обучения кадров
           </p>
         </div>
         <ul class="list card-grid card-grid_type_one-column">

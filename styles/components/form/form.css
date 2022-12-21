@@ -1,10 +1,3 @@
-@import url("__element/form__element.css");
-@import url("__input/form__input.css");
-@import url("__textarea/form__textarea.css");
-@import url("__input/_type/_radio/form__input_type_radio.css");
-@import url("__input/_type/_checkbox/form__input_type_checkbox.css");
-@import url("__input/_type/_select/form__input_type_select.css");
-
 .form {
   display: flex;
   width: 100%;
@@ -19,54 +12,15 @@
   gap: 33px;
 }
 
-.form__element {
-  box-sizing: border-box;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.form-elements-line{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 30px;
-}
-
-.form-checkbox-group{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 10px;
-}
-
-.form__line {
-  width: 100%;
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-}
-
 @media screen and (max-width: 1023px) {
-  .form__line {
-    grid-auto-flow: row;
-    grid-template-columns: auto;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .form{
+  .form {
     padding: 20px;
     border-radius: 30px;
   }
 }
 
-@media screen and (min-width: 1024px){
-  .form{
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  .form {
     padding: 60px;
   }
 }
