@@ -1,0 +1,8 @@
+.menu__number {
+  text-decoration: none;
+}
+
+.menu__number:hover {
+  padding-top: 1px;
+  border-bottom: 1px solid var(--white);
+}
