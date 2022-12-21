@@ -20,8 +20,11 @@
   .card:hover {
     cursor: pointer;
   }
-  .card:hover img {
+  .card:hover .card__img {
     transform: scale(1.2);
+  }
+  .card:hover .button_type_details{
+    background-color: var(--green400);
   }
 }
 
@@ -32,7 +35,7 @@
     padding: 25px;
   }
 
-  .card img {
+  .card .card__img {
     margin-top: -30%;
   }
 }
