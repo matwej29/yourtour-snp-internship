@@ -4,7 +4,7 @@
 
 @media screen and (max-width: 1169px) {
   .photo__item_small {
-    width: calc(25% - 30px);
+    width: calc(25% - 20px);
   }
 }
 
