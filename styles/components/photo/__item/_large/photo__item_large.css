@@ -1,5 +1,5 @@
 .photo__item_large {
-  width: calc(25% - 10px);
+  width: calc(25% - 30px);
 }
 
 @media screen and (max-width: 1919px) {
