@@ -10,6 +10,6 @@
 
 @media screen and (max-width: 1023px) {
   .photo__item_small {
-    width: 33%;
+    width: calc(100% / 3);
   }
 }
