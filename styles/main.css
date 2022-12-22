@@ -59,7 +59,7 @@
 @import url("components/review-card/__subtitle/review-card__subtitle.css");
 @import url("components/review-card/__text/review-card__text.css");
 @import url("components/review-card/__title/review-card__title.css");
-@import url("components/review-card/review-card-grid.css");
+@import url("components/review-card-grid/review-card-grid.css");
 @import url("components/list/list.css");
 
 :root {
