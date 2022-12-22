@@ -11,7 +11,7 @@
   .card-grid{
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;
-    width: 100vw;
+    /* width: 100vw; */
     padding: 0 53px 0 53px;
   }
 }
@@ -19,7 +19,7 @@
 @media screen and (max-width: 1023px) {
   .card-grid{
     grid-template-columns: auto;
-    width: 100vw;
+    /* width: 100vw; */
     padding: 0 21px 0 21px;
   }
 }
