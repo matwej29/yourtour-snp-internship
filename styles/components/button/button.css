@@ -10,3 +10,7 @@
   background-color: transparent;
   padding: 0;
 }
+
+.button:hover {
+  cursor: pointer;
+}

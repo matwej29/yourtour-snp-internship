@@ -4,6 +4,10 @@
   gap: 50px;
 }
 
+.menu__list:hover{
+  cursor: pointer;
+}
+
 @media screen and (max-width: 918px) {
   .menu__list{
     gap: 30px;
