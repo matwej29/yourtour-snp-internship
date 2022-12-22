@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 918px) {
   .menu {
     justify-content: space-between;
     padding: 33px 20px 33px 20px;

@@ -30,7 +30,7 @@
   flex-direction: column;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 918px) {
   .page-header {
     width: 100vw;
     height: 488px;

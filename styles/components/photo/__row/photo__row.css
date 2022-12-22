@@ -10,7 +10,7 @@
   gap: 30px;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 918px) {
   .photo__row{
     column-gap: 18px;
   }

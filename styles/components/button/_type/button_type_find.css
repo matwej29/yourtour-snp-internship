@@ -6,7 +6,7 @@
   border-radius: 10px;
 }
 
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 918px) {
   .button_type_find:hover {
     background-color: var(--green300);
   }

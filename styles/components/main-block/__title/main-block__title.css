@@ -6,7 +6,7 @@
   gap: 35px;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 918px) {
   .main-block__title {
     margin-bottom: 50px;
     gap: 30px;

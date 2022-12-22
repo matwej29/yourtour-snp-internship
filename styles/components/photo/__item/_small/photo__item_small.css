@@ -2,14 +2,14 @@
   width: calc(20% - 30px);
 }
 
-@media screen and (max-width: 1919px) {
+@media screen and (max-width: 1169px) {
   .photo__item_small {
-    width: 25%;
+    width: calc(25% - 30px);
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 918px) {
   .photo__item_small {
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 18px);
   }
 }

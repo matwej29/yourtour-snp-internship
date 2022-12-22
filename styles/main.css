@@ -14,6 +14,7 @@
 @import url("components/footer/__list/footer__list.css");
 @import url("components/footer/__list-item/footer__list-item.css");
 @import url("components/footer/__link/footer__link.css");
+@import url("components/footer-container/footer-container.css");
 @import url("components/icons/arrow/arrow.css");
 @import url("components/icons/instagram/instagram.css");
 @import url("components/icons/facebook/facebook.css");
@@ -99,14 +100,14 @@ body {
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 1919px) and (min-width: 1024px) {
+/* @media screen and (max-width: 1169px) and (min-width: 918px) {
   .main {
     padding: 0 53px 0 53px;
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 918px) {
   .main {
     padding: 0 21px 0 21px;
   }
-}
+} */

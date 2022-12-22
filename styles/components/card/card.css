@@ -16,13 +16,13 @@
   );
 }
 /* 
-@media screen and (max-width: 1919px) {
+@media screen and (max-width: 1169px) {
   .card{
     height: 531px;
   }
 } */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 918px) {
   .card:hover {
     cursor: pointer;
   }
@@ -34,7 +34,7 @@
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 918px) {
   .card {
     height: 318px;
     border-radius: 20px;

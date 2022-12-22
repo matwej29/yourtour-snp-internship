@@ -12,7 +12,7 @@
   font-family: inherit;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 918px) {
   .form__textarea{
     resize: none;
   }

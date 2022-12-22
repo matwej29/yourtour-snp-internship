@@ -11,7 +11,7 @@
   background-size: contain;
 }
 
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 918px) {
   .button_type_details:hover {
     background-color: var(--green400);
   }

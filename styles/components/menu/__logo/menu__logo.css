@@ -7,7 +7,7 @@
   background-image: url("./YourTour.svg");
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 918px) {
   .menu__logo {
     width: 133px;
   }

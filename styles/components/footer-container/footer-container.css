@@ -1,15 +1,17 @@
-.end-block {
+.footer-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  height: 88px;
+  box-sizing: border-box;
+  gap: 7px;
 }
 
-
-
 @media screen and (max-width: 918px) {
-  .end-block{
+  .footer-container {
     flex-direction: column;
+    height: auto;
+    padding: 21px 0 10px 0;
   }
 }
