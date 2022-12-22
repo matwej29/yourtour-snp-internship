@@ -1,7 +1,7 @@
 .photo__elem {
   flex: 1;
   height: 301px;
-  width: 1px;
+  width: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: 50px;

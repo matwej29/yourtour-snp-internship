@@ -1,0 +1,15 @@
+.photo__item_small {
+  width: 20%;
+}
+
+@media screen and (max-width: 1919px) {
+  .photo__item_small {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .photo__item_small {
+    width: 33%;
+  }
+}
