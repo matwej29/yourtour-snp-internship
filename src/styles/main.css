@@ -1,4 +1,4 @@
-@import url("components/typography.css");
+/* @import url("components/typography.css");
 @import url("components/button/button.css");
 @import url("components/button/_type/button_type_tour.css");
 @import url("components/button/_type/button_type_details.css");
@@ -62,7 +62,7 @@
 @import url("components/review-card/__title/review-card__title.css");
 @import url("components/review-card-grid/review-card-grid.css");
 @import url("components/list/list.css");
-@import url("components/container/container.css");
+@import url("components/container/container.css"); */
 
 :root {
   --black: #1b1f2b;
