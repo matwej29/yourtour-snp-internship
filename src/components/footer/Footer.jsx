@@ -10,6 +10,9 @@ import InstagramLogo from '../icons/instagram/InstagramLogo';
 
 import './footer.css';
 
+// TODO: возможно стоит создать отдельный компонент под это или перенести класс контейнера
+import '../footer-container/footer-container.css';
+
 const Footer = () => (
     <footer className="footer footer-container container">
         <p className="p_n p_gray p_clear-margin">Наши социальные сети</p>
