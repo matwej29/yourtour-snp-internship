@@ -1,13 +1,20 @@
 import ReactDOM from "react-dom/client";
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
 import "./styles/main.css";
-import debounce from "./helpers/debounce";
-import { fixMenuOnScroll } from "./components/menu/_fixed/menu_fixed";
+import Menu from "./components/menu/Menu.jsx";
 
-window.onscroll = debounce(() => fixMenuOnScroll(), 10);
-
-const App = () => <></>;
+// main page
+const App = () => (
+  <>
+    <Menu />
+  </>
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<App />);
+root.render(
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+);
