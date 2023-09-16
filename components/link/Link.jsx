@@ -1,12 +1,5 @@
-import React from "react";
-
-import "./link.css";
-
-export const Link = ({ children, href, linkType }) => (
-  <a className="link"
-     href={href}
-     type={linkType}
-  >
+export const Link = ({ children, href, linkType, className }) => (
+  <a className={`link ${className}`} href={href} type={linkType}>
     {children}
   </a>
 );

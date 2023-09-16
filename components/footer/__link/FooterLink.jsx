@@ -1,11 +1,10 @@
-import React from "react";
 
-import "./footer__link.css";
+import Link from "next/link";
 
-const FooterLink = ({ href="#",children }) => (
-  <a className="footer__link" href={href}>
+const FooterLink = ({ href = "#", children }) => (
+  <Link className="footer__link p_n" href={href}>
     {children}
-  </a>
+  </Link>
 );
 
 export default FooterLink;

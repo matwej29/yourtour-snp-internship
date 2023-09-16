@@ -1,7 +1,10 @@
 .end-block__image {
+  display: block;
+  position: relative;
   width: 370px;
   height: 370px;
   border-radius: 50px;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 918px) {

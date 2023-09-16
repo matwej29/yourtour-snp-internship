@@ -1,8 +1,3 @@
-// React component for a corresponding in index.html with class="card"
-import React from "react";
-import "./card.css";
-import "./__content/card__content.css";
-import "./_type/card_type_horizontal.css";
 import CardImage from "./__img/CardImage";
 
 export const CardHorizontal = ({ children, src }) => (

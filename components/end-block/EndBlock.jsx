@@ -1,28 +1,29 @@
-// React component for a corresponding HTML element
-import React from "react";
 import Link from "../link/Link";
+import Image from "next/image";
+import { H3 } from "../heading/Heading";
+import MainBlock from "../main-block/MainBlock";
 
-import "./end-block.css";
-import EndBlockImage from "../../styles/images/footer photo.jpg";
-
-export const EndBlock = () => (
-  <div className="end-block">
-    <img className="end-block__image"
-         src={EndBlockImage}
-         alt="End block image"
-    />
-    <div className="end-block__text">
-      <h3 className="h3">Пора в путешествие вместе с нами!</h3>
-      <p className="p_n p_gray p_clear-margin">
-        Напиши на почту и узнай подробности на
-        <Link href="mailto:yourtour@gmail.com"
-              linkType="email"
-        >
-          yourtour@gmail.com
-        </Link>
-      </p>
+// TODO: возможно, стоит переименовать в contact-block
+const EndBlock = () => (
+  <MainBlock>
+    <div className="end-block">
+      <div className="end-block__image">
+        <Image src="/images/footer photo.jpg" alt="Contact us image" fill />
+      </div>
+      <div className="end-block__text">
+        <H3>Пора в путешествие вместе с нами!</H3>
+        <p className="p_n p_gray p_clear-margin">
+          Напиши на почту и узнай подробности на
+          <Link
+            href="mailto:yourtour@gmail.com"
+            linkType="email"
+            className="p_black">
+            yourtour@gmail.com
+          </Link>
+        </p>
+      </div>
     </div>
-  </div>
+  </MainBlock>
 );
 
 export default EndBlock;

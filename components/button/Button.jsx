@@ -1,5 +1,3 @@
-import React from "react";
-
 export const ButtonDetails = ({ children, onClick, className = "" }) => (
   <button
     onClick={onClick}

@@ -1,19 +1,11 @@
-// React component for a corresponding HTML element
-import React from "react";
-
-import "./card-grid.css";
-import "./card-grid_type_one-column.css";
+import List from "../list/List";
 
 export const CardGridHorizontal = ({ children }) => (
-  <div className="list card-grid">
-    {children}
-  </div>
+  <List className="card-grid">{children}</List>
 );
 
 const CardGridVertical = ({ children }) => (
-  <div className="list card-grid card-grid_type_one-column">
-    {children}
-  </div>
+  <List className="list card-grid card-grid_type_one-column">{children}</List>
 );
 
 export default CardGridVertical;
