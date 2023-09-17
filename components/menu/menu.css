@@ -3,6 +3,7 @@
 .menu {
   box-sizing: border-box;
   position: absolute;
+  z-index: 100;
   width: 100vw;
   height: 88px;
   left: 0px;
