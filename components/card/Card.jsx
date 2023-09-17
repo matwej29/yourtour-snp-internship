@@ -1,7 +1,7 @@
 import CardImage from "./__img/CardImage";
 
 export const CardHorizontal = ({ children, src }) => (
-  <div className="card card_horizontal">
+  <div className="card card_type_horizontal">
     <CardImage src={src} />
     <div className="card__content">{children}</div>
   </div>
