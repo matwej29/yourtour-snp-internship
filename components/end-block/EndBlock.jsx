@@ -1,6 +1,6 @@
 import Link from "../link/Link";
 import Image from "next/image";
-import { H3 } from "../heading/Heading";
+import { H3 } from "../headings/Headings";
 import MainBlock from "../main-block/MainBlock";
 
 // TODO: возможно, стоит переименовать в contact-block
