@@ -1,5 +1,3 @@
-import "react";
-
 import Tab from "../tab/Tab";
 import Button from "../button/Button";
 
