@@ -1,10 +1,18 @@
 import { ButtonTour } from "../button/Button";
 import { H1 } from "../headings/Headings";
 import MainBlock from "../main-block/MainBlock";
+import Image from "next/image";
 
 const PageHeaderBlock = () => (
   <MainBlock>
     <div className="page-header">
+      <Image
+        src="/images/header-img.jpg"
+        alt="page-header"
+        style={{ position: "absolute", zIndex: -1, objectFit: "cover", objectPosition: "center" }}
+        fill
+        priority
+      />
       <div className="page-header__content">
         <H1 className="h1 p_white text-center">
           Идеальные путешествия существуют
