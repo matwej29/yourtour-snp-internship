@@ -13,11 +13,13 @@ const photoList = [
     src: "/images/travel photo-1.jpg",
     alt: "travel photo-1",
     size: SIZES.large,
+    hide: "medium",
   },
   {
     src: "/images/travel photo-2.jpg",
     alt: "travel photo-2",
     size: SIZES.large,
+    hide: "mobile",
   },
   {
     src: "/images/travel photo-3.jpg",
@@ -38,11 +40,13 @@ const photoList = [
     src: "/images/travel photo-6.jpg",
     alt: "travel photo-6",
     size: SIZES.small,
+    hide: "mobile",
   },
   {
     src: "/images/travel photo-7.jpg",
     alt: "travel photo-7",
     size: SIZES.small,
+    hide: "medium",
   },
   {
     src: "/images/travel photo-8.jpg",
@@ -68,18 +72,24 @@ const photoList = [
     src: "/images/travel photo-11.jpg",
     alt: "travel photo-11",
     size: SIZES.large,
+    hide: "medium",
   },
   {
     src: "/images/travel photo-12.jpg",
     alt: "travel photo-12",
     size: SIZES.large,
+    hide: "mobile",
   },
 ];
 
 const PhotoSection = () => (
   <List className="photo" wrapped={false}>
-    {photoList.map(({ src, alt, size }, index) => (
-      <ListItem className={`photo__item ${size}`} key={index}>
+    {photoList.map(({ src, alt, size, hide = "" }, index) => (
+      <ListItem
+        className={`photo__item ${size} ${
+          hide ? `photo__elem_hide-${hide}` : ""
+        }`}
+        key={index}>
         <Image className="photo__elem" src={src} alt={alt} fill key={index} />
       </ListItem>
     ))}
