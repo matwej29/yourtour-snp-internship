@@ -6,7 +6,7 @@ const List = ({
   itemClassName = "",
   wrapped = true,
 }) => {
-  const listStyles = className !== "" ? `list ${className}` : "list clear_list";
+  const listStyles = className !== "" ? `${className} list` : "list clear_list";
 
   if (!wrapped) return <ul className={listStyles}>{children}</ul>;
 
