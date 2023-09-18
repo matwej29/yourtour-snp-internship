@@ -8,6 +8,7 @@ const CardImage = ({ src }) => (
     className="card__img"
     src={src}
     alt={src}
+    style={{top: "auto"}}
     fill
     sizes={SIZES}
   />

@@ -101,7 +101,7 @@ const HistoriesData = [
 ];
 
 const HistoriesBlock = () => (
-  <MainBlock id="histories">
+  <MainBlock id="histories" container={false}>
     <MainBlock__title>
       <H2>Истории путешествий</H2>
       <MainBlock__description>
