@@ -15,7 +15,7 @@
 @import url("../components/footer/__list-item/footer__list-item.css");
 @import url("../components/footer/__link/footer__link.css");
 @import url("../components/footer-container/footer-container.css");
-@import url("../components/icons/arrow/arrow.css");
+/* @import url("../components/icons/arrow/arrow.css"); */
 @import url("../components/icons/instagram/instagram.css");
 @import url("../components/icons/facebook/facebook.css");
 @import url("../components/icons/vkontakte/vkontakte.css");
@@ -31,7 +31,6 @@
 @import url("../components/card/_type/card_type_horizontal.css");
 @import url("../components/main-block/main-block.css");
 @import url("../components/main-block/__title/main-block__title.css");
-@import url("../components/form-block/form-block.css");
 @import url("../components/form/form.css");
 @import url("../components/form/__checkbox-group/form__checkbox-group.css");
 @import url("../components/form/__element/form__element.css");
@@ -82,7 +81,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   font-style: normal;
   margin: 0;
   overflow-x: hidden;
