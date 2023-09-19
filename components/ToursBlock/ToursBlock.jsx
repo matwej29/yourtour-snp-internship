@@ -52,8 +52,7 @@ const ToursBlock = () => (
     </div>
     <CardGridHorizontal>
       {card_content_list.map((card_content, index) => (
-        <Card key={index}>
-          <CardImage src={card_content.img} />
+        <Card src={card_content.img} key={index}>
           <CardContent>
             <div>
               <H3 className="h3 card__title p_white">{card_content.title}</H3>
