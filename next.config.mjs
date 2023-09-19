@@ -1,7 +1,7 @@
 import withPlaiceholder from "@plaiceholder/next";
- 
+
 const config = {
-  // my Next.js config
+  output: "export",
 };
- 
+
 export default withPlaiceholder(config);
