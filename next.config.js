@@ -1,9 +1,11 @@
 // import withPlaiceholder from "@plaiceholder/next";
 
-const config = {
+// const config = {
+//   output: "export",
+// };
+
+// export default withPlaiceholder(config);
+
+module.export = {
   output: "export",
 };
-
-
-export default config;
-// export default withPlaiceholder(config);
