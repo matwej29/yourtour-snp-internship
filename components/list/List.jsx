@@ -12,7 +12,7 @@ const List = ({
 
   return (
     <ul className={listStyles}>
-      {children.map((child, index) => (
+      {children && children.map((child, index) => (
         <ListItem className={itemClassName} key={index}>
           {child}
         </ListItem>
