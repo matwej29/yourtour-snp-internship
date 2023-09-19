@@ -4,4 +4,6 @@ const config = {
   output: "export",
 };
 
-export default withPlaiceholder(config);
+
+export default config;
+// export default withPlaiceholder(config);
