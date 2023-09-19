@@ -1,9 +1,13 @@
 import Image from "next/image";
 
-
-// FIXME: должно быть Image, но случается непонятный баг
 const ReviewCardPhoto = ({ src }) => (
-    <img className="review-card__photo" src={src} alt="review" />
+  <Image
+    className="review-card__photo"
+    src={src}
+    alt="review photo"
+    width={75}
+    height={75}
+  />
 );
 
 export default ReviewCardPhoto;
