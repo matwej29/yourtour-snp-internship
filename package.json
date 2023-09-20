@@ -17,9 +17,10 @@
     "eslint-config-next": "13.4.19"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 8089",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 8089",
     "lint": "next lint"
-  }
+  },
+  "packageManager": "yarn@3.6.3"
 }
