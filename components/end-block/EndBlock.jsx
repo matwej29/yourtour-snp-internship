@@ -13,7 +13,7 @@ const EndBlock = () => (
       <div className="end-block__text">
         <H3>Пора в путешествие вместе с нами!</H3>
         <p className="p_n p_gray p_clear-margin">
-          Напиши на почту и узнай подробности на
+          Напиши на почту и узнай подробности на {" "}
           <Link
             href="mailto:yourtour@gmail.com"
             linkType="email"
