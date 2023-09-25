@@ -13,8 +13,8 @@ const Roboto = localFont({
 export default function RootLayout({ children }) {
   return (
     <html lang="ru" className={Roboto.className}>
-      <title>YourTour</title>
       <head>
+        <title>YourTour</title>
         <link
           type="image/png"
           sizes="16x16"
