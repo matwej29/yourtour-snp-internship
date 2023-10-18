@@ -1,7 +1,12 @@
+import Image from "next/image";
 
-
-// import "./vkontakte.module.css";
-
-const VkontakteLogo = () => <div className="vkontakte"></div>;
+const VkontakteLogo = () => (
+  <Image
+    src={"/logos/vkontakte.svg"}
+    alt={"vkontakte logo"}
+    height={12}
+    width={20}
+  />
+);
 
 export default VkontakteLogo;

@@ -1,0 +1,52 @@
+@use "card_type_horizontal";
+
+.card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  height: 531px;
+  border-radius: 50px;
+  padding: 50px;
+  box-sizing: border-box;
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.06) 48.44%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+
+.card__content {
+  flex: 1;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media screen and (min-width: 918px) {
+  .card:hover {
+    cursor: pointer;
+
+    .card__img {
+      transform: scale(1.2);
+    }
+    .button_type_details {
+      background-color: var(--green400);
+    }
+  }
+}
+
+@media screen and (max-width: 918px) {
+  .card {
+    height: 318px;
+    border-radius: 20px;
+    padding: 25px;
+  }
+
+  .card .card__img {
+    margin-top: -30%;
+  }
+}

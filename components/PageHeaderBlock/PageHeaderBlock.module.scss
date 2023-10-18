@@ -1,0 +1,68 @@
+@use '../../shared/styles/typography.module.scss';
+
+.page-header {
+  height: 831px;
+  width: 100vw;
+  /* background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0) 39.9%
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../images/header-img.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.content {
+  width: 600px;
+  margin: 209px 0 119px 0;
+  gap: 50px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 918px) {
+  .page-header {
+    width: 100vw;
+    height: 488px;
+  }
+
+  .content {
+    width: 260px;
+    margin: 140px 0 52px 0;
+  }
+}
+
+.button_tour {
+  @extend .p_s;
+
+  width: 118px;
+  height: 34px;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 918px) {
+  .button_tour:hover {
+    background-color: var(--orange200);
+    color: var(--white);
+    border-color: var(--orange200);
+    cursor: pointer;
+  }
+}
+
+.button_tour:active {
+  background-color: var(--orange100);
+  color: var(--black);
+}

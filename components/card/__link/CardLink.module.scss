@@ -1,0 +1,20 @@
+@use '../../../shared/styles/typography.module.scss';
+
+.card__link {
+  @extend .p_n;
+  color: var(--white);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 918px) {
+  .card__link:hover {
+    padding-top: 1px;
+    border-bottom: 1px solid var(--white);
+  }
+}
+
+@media screen and (max-width: 918px) {
+  .card__link {
+    display: none;
+  }
+}

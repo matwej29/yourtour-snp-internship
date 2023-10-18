@@ -1,11 +1,12 @@
 import Image from "next/image";
+import List, { ListItem } from "../list/List";
 
-import List from "../list/List";
-import ListItem from "../list/__item/ListItem";
+import styles from "./Photo.module.scss";
+import classNames from "../../shared/helpers/classNames";
 
 const SIZES = {
-  small: "photo__item_small",
-  large: "photo__item_large",
+  small: "item_small",
+  large: "item_large",
 };
 
 const photoList = [
@@ -83,14 +84,17 @@ const photoList = [
 ];
 
 const PhotoSection = () => (
-  <List className="photo" wrapped={false}>
+  <List className={styles.section} wrapped={false}>
     {photoList.map(({ src, alt, size, hide = "" }, index) => (
       <ListItem
-        className={`photo__item ${size} ${
-          hide ? `photo__elem_hide-${hide}` : ""
-        }`}
+        className={classNames(
+          styles.item,
+          styles.item,
+          styles[size],
+          hide && styles[`elem_hide-${hide}`]
+        )}
         key={index}>
-        <Image className="photo__elem" src={src} alt={alt} fill key={index} />
+        <Image className={styles.elem} src={src} alt={alt} fill key={index} />
       </ListItem>
     ))}
   </List>

@@ -1,11 +1,14 @@
 import NavigationTab from "../NavigationTab/NavigationTab";
-import { H3 } from "../headings/Headings";
+import { H2, H3 } from "../headings/Headings";
 import Arrow from "../icons/arrow/Arrow";
-import MainBlock from "../main-block/MainBlock";
+import MainBlock, { MainBlockTitle } from "../main-block/MainBlock";
 import Card from "../card/Card";
-import { CardGridHorizontal } from "../card-grid/CardGrid";
-import CardImage from "../card/__img/CardImage";
-import { ButtonDetails } from "../button/Button";
+import CardGrid from "../card-grid/CardGrid";
+import { ButtonText } from "../button/Button";
+
+import typography from "../../shared/styles/typography.module.scss";
+import classNames from "../../shared/helpers/classNames";
+import cardStyles from "../card/Сard.module.scss";
 
 const card_content_list = [
   {
@@ -41,31 +44,43 @@ const card_content_list = [
 ];
 
 const CardContent = ({ children }) => (
-  <div className="card__content">{children}</div>
+  <div className={cardStyles.card__content}>{children}</div>
+);
+
+const CardTitle = ({ children }) => (
+  <H3 className={classNames(cardStyles.card__title, typography.p_white)}>
+    {children}
+  </H3>
+);
+
+const Price = ({ children }) => (
+  <p className={classNames(typography.p_s, typography.p_white)}>{children}</p>
 );
 
 const ToursBlock = () => (
   <MainBlock id="tours">
-    <div className="main-block__title">
-      <h2 className="h2 text-center">Выбери свой тур</h2>
+    <MainBlockTitle>
+      <H2 className={typography["text-center"]}>Выбери свой тур</H2>
       <NavigationTab />
-    </div>
-    <CardGridHorizontal>
+    </MainBlockTitle>
+    <CardGrid isHorisontal={true}>
       {card_content_list.map((card_content, index) => (
         <Card src={card_content.img} key={index}>
           <CardContent>
             <div>
-              <H3 className="h3 card__title p_white">{card_content.title}</H3>
-              <p className="p_s p_white">от {card_content.price} руб</p>
+              <CardTitle>{card_content.title}</CardTitle>
+              <Price>от {card_content.price} руб</Price>
             </div>
-            <ButtonDetails>
-              <span className="p_b p_white">Подробнее</span>
+            <ButtonText>
+              <span className={classNames(typography.p_b, typography.p_white)}>
+                Подробнее
+              </span>
               <Arrow />
-            </ButtonDetails>
+            </ButtonText>
           </CardContent>
         </Card>
       ))}
-    </CardGridHorizontal>
+    </CardGrid>
   </MainBlock>
 );
 

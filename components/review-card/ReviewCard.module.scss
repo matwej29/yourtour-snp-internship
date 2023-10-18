@@ -1,0 +1,46 @@
+@use '../../shared/styles/typography.module.scss';
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--beige200);
+  border-radius: 30px;
+  padding: 40px;
+  gap: 70px;
+}
+
+@media screen and (max-width: 918px) {
+  .review-card {
+    padding: 20px;
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.subtitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text {
+  @extend .p_b, .p_clear-margin;
+  white-space: normal;
+}
+
+.photo {
+  display: block;
+  position: relative;
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+}
+
+.tour-title{
+  @extend .p_n, .p_gray, .p_clear-margin;
+}

@@ -1,6 +1,5 @@
-
-import "./card__links.css";
+import styles from "./CardLinks.module.scss";
 
 export const CardLinks = ({ children }) => (
-  <div className="card__links">{children}</div>
+  <div className={styles.card__links}>{children}</div>
 );

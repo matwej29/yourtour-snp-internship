@@ -1,9 +1,7 @@
-import "react";
 import Image from "next/image";
 
 const Dropdown = () => (
   <Image
-    className={"dropdown"}
     src={"/icons/dropdown.svg"}
     alt={"dropdown"}
     height={17}

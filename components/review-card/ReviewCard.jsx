@@ -1,16 +1,25 @@
-import "react";
-
-import ReviewCardPhoto from "./__photo/ReviewCardPhoto";
 import { H3 } from "../headings/Headings";
+import Image from "next/image";
 
-// TODO: разнести по отдельным компонентам
+import styles from "./ReviewCard.module.scss";
+
+const ReviewCardPhoto = ({ src }) => (
+  <Image
+    className={styles.photo}
+    src={src}
+    alt="review photo"
+    width={75}
+    height={75}
+  />
+);
+
 const ReviewCard = ({ children, customer_name, tour_title, photo }) => (
-  <div className="review-card">
-    <p className="review-card__text p_b p_clear-margin">{children}</p>
-    <div className="review-card__title">
-      <div className="review-card__subtitle">
+  <div className={styles["review-card"]}>
+    <p className={styles.text}>{children}</p>
+    <div className={styles.title}>
+      <div className={styles.subtitle}>
         <H3>{customer_name}</H3>
-        <p className="p_n p_gray p_clear-margin">Тур: {tour_title}</p>
+        <p className={styles["tour-title"]}>Тур: {tour_title}</p>
       </div>
       <ReviewCardPhoto src={photo} />
     </div>

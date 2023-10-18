@@ -1,15 +1,15 @@
+import classNames from "../../shared/helpers/classNames";
 import CardImage from "./__img/CardImage";
 
-export const CardHorizontal = ({ children, src }) => (
-  <div className="card card_type_horizontal">
-    <CardImage src={src} />
-    <div className="card__content">{children}</div>
-  </div>
-);
+import styles from "./Сard.module.scss";
 
-const Card = ({ children, src }) => (
-  <div className="card">
-    <div className="card__content">{children}</div>
+const Card = ({ children, src, isHorizontal = false }) => (
+  <div
+    className={classNames(
+      styles.card,
+      isHorizontal ? styles.card_type_horizontal : ""
+    )}>
+    <div className={styles.card__content}>{children}</div>
     <CardImage src={src} />
   </div>
 );

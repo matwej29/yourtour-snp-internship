@@ -1,11 +1,15 @@
+import classNames from "../../shared/helpers/classNames";
 import List from "../list/List";
+import styles from "./CardGrid.module.scss";
 
-export const CardGridHorizontal = ({ children }) => (
-  <List className="card-grid">{children}</List>
+const CardGrid = ({ children, isHorisontal = false }) => (
+  <List
+    className={classNames(
+      styles["card-grid"],
+      isHorisontal ? "" : styles["card-grid_type_one-column"]
+    )}>
+    {children}
+  </List>
 );
 
-const CardGridVertical = ({ children }) => (
-  <List className="list card-grid card-grid_type_one-column">{children}</List>
-);
-
-export default CardGridVertical;
+export default CardGrid;

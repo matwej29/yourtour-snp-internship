@@ -1,0 +1,23 @@
+@use "input";
+
+.textarea {
+  @extend .input;
+
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 152px;
+  resize: vertical;
+
+  background: var(--beige100);
+  border: 1px solid var(--beige200);
+
+  padding: 20px;
+  border-radius: 10px;
+  font-family: inherit;
+}
+
+@media screen and (max-width: 918px) {
+  .textarea {
+    resize: none;
+  }
+}

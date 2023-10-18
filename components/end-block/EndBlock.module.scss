@@ -1,0 +1,51 @@
+@use "../../shared/styles/typography.module.scss";
+
+.end-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+@media screen and (max-width: 918px) {
+  .end-block {
+    flex-direction: column;
+  }
+}
+
+.text {
+  display: flex;
+  max-width: 371px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+@media screen and (max-width: 918px) {
+  .text p {
+    text-align: center;
+  }
+
+  .text h3 {
+    text-align: center;
+  }
+}
+
+.image {
+  display: block;
+  position: relative;
+  width: 370px;
+  height: 370px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 918px) {
+  .image {
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+  }
+}

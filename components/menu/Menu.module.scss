@@ -1,0 +1,93 @@
+@use "./_logo/logo";
+@use "../../shared/styles/typography.module.scss";
+
+.menu {
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 100;
+  width: 100vw;
+  height: 88px;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  align-items: center;
+}
+
+.menu_fixed {
+  @extend .menu;
+  position: fixed;
+  justify-content: space-evenly;
+  background: rgba(243, 239, 232, 0.6);
+  backdrop-filter: blur(54px);
+
+  .logo {
+    background-image: url("./_logo/YourTour-black.svg");
+  }
+
+  .link,
+  .number {
+    color: var(--black);
+  }
+
+  .link:hover,
+  .number:hover {
+    border-bottom: 1px solid var(--black);
+  }
+}
+
+@media screen and (max-width: 918px) {
+  .menu,
+  .menu_fixed {
+    justify-content: space-between;
+    padding: 33px 20px 33px 20px;
+  }
+}
+
+.number {
+  @extend .p_n, .p_white;
+  text-decoration: none;
+}
+
+.number:hover {
+  padding-top: 1px;
+  border-bottom: 1px solid var(--white);
+}
+
+.link {
+  @extend .p_n, .p_white;
+  text-decoration: none;
+}
+
+.link:hover {
+  padding-top: 1px;
+  border-bottom: 1px solid var(--white);
+}
+
+@media screen and (max-width: 918px) {
+  .link {
+    display: none;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.list:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 918px) {
+  .list {
+    gap: 30px;
+  }
+}
+
+.list-elem {
+  align-self: start;
+}

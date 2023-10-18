@@ -1,19 +1,49 @@
-import Button, { ButtonFind, ButtonReset } from "../button/Button.jsx";
-import Link from "next/link";
+import Button from "../button/Button.jsx";
+import Link from "../link/Link.jsx";
 import React, { useEffect, useRef, useState } from "react";
-import maskPhone from "./__input/maskPhone.js";
+import maskPhone from "./maskPhone.js";
+
+import styles from "./Form.module.scss";
+import classNames from "../../shared/helpers/classNames.js";
+
+const ButtonFind = ({ children, onClick }) => (
+  <Button className={classNames(styles.button_find, styles.p_n)} onClick={onClick}>
+    {children}
+  </Button>
+);
+
+const ButtonReset = ({ children, onClick }) => (
+  <Button className={classNames(styles.button_reset, styles.p_n)} onClick={onClick}>
+    {children}
+  </Button>
+);
+
+const Element = ({ children }) => (
+  <div className={styles.element}>{children}</div>
+);
+
+const ElementsLine = ({ children }) => (
+  <div className={styles["elements-line"]}>{children}</div>
+);
 
 export const Checkbox = ({ name, children, checked, onChange }) => (
-  <label className="form__checkbox-group">
+  <label className={styles["checkbox-group"]}>
     <input
       type="checkbox"
       id={name}
       name={name}
       checked={checked}
       onChange={onChange}
-      className="form__input_type_checkbox"
+      className={styles.checkbox}
     />
-    <span className="p_n p_gray p_clear-margin">{children}</span>
+    <span
+      className={classNames(
+        styles.p_n,
+        styles.p_gray,
+        styles["p_clear-margin"]
+      )}>
+      {children}
+    </span>
   </label>
 );
 
@@ -22,14 +52,19 @@ export const Input = React.forwardRef(function Input(
   ref
 ) {
   return (
-    <label className="form__element p_n p_clear-margin">
+    <label
+      className={classNames(
+        styles.element,
+        styles.p_n,
+        styles["p_clear-margin"]
+      )}>
       {label}
       <input
         type={type}
         name={name}
         value={value}
         onChange={onChange}
-        className="form__input p_n"
+        className={classNames(styles.input, styles.p_n)}
         placeholder={placeholder}
         ref={ref}
       />
@@ -45,14 +80,14 @@ export const Select = ({
   children,
   defaultValue,
 }) => (
-  <label className="form__element p_n p_clear-margin">
+  <label className={classNames(styles.element, styles.p_n, styles["p_clear-margin"])}>
     {label}
     <select
       name={name}
       value={value}
       defaultValue={defaultValue}
       onChange={onChange}
-      className="form__input form__input_type_select p_n"
+      className={classNames(styles.select, styles.p_n)}
       required>
       {children}
     </select>
@@ -60,30 +95,37 @@ export const Select = ({
 );
 
 export const Radio = ({ name, children, value, checked, onChange }) => (
-  <label className="form__input_type_radio p_n p_clear-margin">
+  <label className={classNames(styles.radio, styles.p_n, styles["p_clear-margin"])}>
     <input
       type="radio"
       name={name}
       value={value}
       checked={checked}
       onChange={onChange}
-      className="form__input_type_radio p_n"
+      className={classNames(styles.radio, styles.p_n)}
     />
     {children}
   </label>
 );
 
 export const Textarea = ({ name, label, value, onChange }) => (
-  <label className="form__element p_n p_clear-margin">
+  <label
+    className={classNames(
+      styles.element,
+      styles.p_n,
+      styles["p_clear-margin"]
+    )}>
     {label}
     <textarea
       name={name}
       value={value}
       onChange={onChange}
-      className="form__input form__textarea p_n"
+      className={classNames(styles.textarea, styles.p_n)}
     />
   </label>
 );
+
+const Line = ({ children }) => <div className={styles.line}>{children}</div>;
 
 const Form = () => {
   const phoneRef = useRef(null);
@@ -100,7 +142,7 @@ const Form = () => {
 
   const send = (e) => {
     e.preventDefault();
-    
+
     console.log({
       name,
       destination,
@@ -133,8 +175,8 @@ const Form = () => {
   }, []);
 
   return (
-    <form className="form">
-      <div className="form__line">
+    <form className={styles.form}>
+      <Line>
         <Input
           name="name"
           label="Имя"
@@ -153,9 +195,9 @@ const Form = () => {
           <option value="">Первый пункт</option>
           <option value="">Второй пункт</option>
         </Select>
-      </div>
+      </Line>
 
-      <div className="form__line">
+      <Line>
         <Input
           name="email"
           label="Email"
@@ -171,9 +213,9 @@ const Form = () => {
           ref={phoneRef}
           onChange={(e) => setPhone(e.target.value)}
         />
-      </div>
+      </Line>
 
-      <div className="form__line">
+      <Line>
         <Input
           name="date-from"
           label="Дата от"
@@ -188,13 +230,15 @@ const Form = () => {
           type="date"
           onChange={(e) => setDateTo(e.target.value)}
         />
-      </div>
+      </Line>
 
       <Textarea name="commantary" label="Комментарий" />
 
-      <div className="form__element">
-        <p className="p_n p_clear-margin">Вам есть 18 лет?</p>
-        <div className="form__elements-line">
+      <Element>
+        <p className={classNames(styles.p_n, styles["p_clear-margin"])}>
+          Вам есть 18 лет?
+        </p>
+        <ElementsLine>
           <Radio name="age" value="yes" onChange={() => setAge(true)}>
             {" "}
             Да{" "}
@@ -203,26 +247,26 @@ const Form = () => {
             {" "}
             Нет{" "}
           </Radio>
-        </div>
-      </div>
+        </ElementsLine>
+      </Element>
 
       <Checkbox name="agree" onChange={() => setAgree(!agree)}>
         Нажимая кнопку, я принимаю условия&nbsp;
-        <Link href="#" className="link p_n p_black">
+        <Link href="#" className={classNames(styles.p_n, styles.p_black)}>
           Лицензионного договора
         </Link>
       </Checkbox>
 
-      <div className="form__element">
-        <div className="form__elements-line">
-          <ButtonFind onClick={(e) => send(e)} className="p_n">
+      <Element>
+        <ElementsLine>
+          <ButtonFind onClick={(e) => send(e)}>
             Найти тур
           </ButtonFind>
-          <ButtonReset onClick={(e) => reset(e)} className="p_n">
+          <ButtonReset onClick={(e) => reset(e)}>
             Сбросить
           </ButtonReset>
-        </div>
-      </div>
+        </ElementsLine>
+      </Element>
     </form>
   );
 };

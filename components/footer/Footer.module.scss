@@ -1,0 +1,67 @@
+@use '../../shared/styles/typography.module.scss';
+
+.footer {
+  background-color: var(--beige200);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 88px;
+  box-sizing: border-box;
+  gap: 7px;
+}
+
+@media screen and (max-width: 918px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    padding: 21px 0 10px 0;
+  }
+}
+
+.link{
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--black);
+}
+
+@media screen and (min-width: 918px) {
+  .link:hover {
+    padding-top: 1px;
+    border-bottom: 1px solid var(--black);
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width:918px) {
+  .list {
+    gap: 15px;
+  }
+}
+
+
+.list-item {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 918px) {
+  .list-item {
+    gap: 5px;
+  }
+}

@@ -1,5 +1,5 @@
 import localFont from "next/font/local";
-import "../styles/main.css";
+import "../shared/styles/main.scss";
 
 const Roboto = localFont({
   src: [

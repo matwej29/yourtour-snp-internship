@@ -1,33 +1,17 @@
-export const ButtonDetails = ({ children, onClick, className = "" }) => (
-  <button
-    onClick={onClick}
-    className={`button button_type_details ${className}`}>
-    {children}
-  </button>
-);
+import styles from "./button.module.scss";
 
-export const ButtonFind = ({ children, onClick, className = "" }) => (
-  <button onClick={onClick} className={`button button_type_find ${className}`}>
-    {children}
-  </button>
-);
-
-export const ButtonReset = ({ children, onClick, className = "" }) => (
-  <button onClick={onClick} className={`button button_type_reset ${className}`}>
-    {children}
-  </button>
-);
-
-export const ButtonTour = ({ children, onClick, className = "" }) => (
-  <button onClick={onClick} className={`button button_type_tour ${className}`}>
-    {children}
-  </button>
-);
+import classNames from '../../shared/helpers/classNames';
 
 const Button = ({ children, onClick, className = "" }) => (
-  <button onClick={onClick} className={`button ${className}`}>
+  <button onClick={onClick} className={classNames(styles.button, className)}>
     {children}
   </button>
 );
+
+export const ButtonText = ({ children, onClick, className = "" }) => (
+  <Button onClick={onClick} className={classNames(styles.button_text, className)}>
+    {children}
+  </Button>
+)
 
 export default Button;

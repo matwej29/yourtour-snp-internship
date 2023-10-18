@@ -1,0 +1,24 @@
+@use "../input";
+
+.select {
+  @extend .input;
+
+  appearance: none;
+  background-image: url(./select.svg);
+  background-repeat: no-repeat;
+  background-position: 95%;
+}
+
+.select:hover {
+  background-image: url(./select.svg);
+  background-repeat: no-repeat;
+  background-position: 95%;
+}
+
+.select:required:invalid {
+  color: var(--gray300);
+}
+
+.select option {
+  color: var(--black);
+}

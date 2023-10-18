@@ -1,20 +1,28 @@
-import MainBlock, { MainBlock__description, MainBlock__title } from "../main-block/MainBlock";
+import MainBlock, {
+  MainBlockDescription,
+  MainBlockTitle,
+} from "../main-block/MainBlock";
 import { H2, H3 } from "../headings/Headings";
-import CardGridVertical from "../card-grid/CardGrid";
-import { CardHorizontal } from "../card/Card";
-import { ButtonDetails } from "../button/Button";
-import Link from "next/link";
+import CardGrid from "../card-grid/CardGrid";
+import Card from "../card/Card";
+import { CardFooter } from "../card/__footer/CardFooter";
+import { CardLinks } from "../card/__links/CardLinks";
+import { CardLink } from "../card/__link/CardLink";
+import { ButtonText } from "../button/Button";
 import Arrow from "../icons/arrow/Arrow";
 
+import styles from "./HistoriesBlock.module.scss";
+import classNames from "../../shared/helpers/classNames";
+
 const History = ({ title, description, theses, img_src, links }) => (
-  <CardHorizontal src={img_src}>
+  <Card src={img_src} isHorizontal={true}>
     <div>
-      <H3 className="h3 card__title p_white">{title}</H3>
+      <H3 className={styles.p_white}>{title}</H3>
       <div>
-        <p className="p_s p_white">{description}</p>
+        <p className={classNames(styles.p_s, styles.p_white)}>{description}</p>
         <ul>
           {theses.map((thesis, index) => (
-            <li key={index} className="p_s p_white">
+            <li key={index} className={classNames(styles.p_s, styles.p_white)}>
               {thesis}
             </li>
           ))}
@@ -22,20 +30,22 @@ const History = ({ title, description, theses, img_src, links }) => (
       </div>
     </div>
 
-    <div className="card__footer">
-      <ButtonDetails>
-        <span className="p_b p_white">Подробнее</span>
+    <CardFooter>
+      <ButtonText>
+        <span className={classNames(styles.p_b, styles.p_white)}>
+          Подробнее
+        </span>
         <Arrow />
-      </ButtonDetails>
-      <div className="card__links">
+      </ButtonText>
+      <CardLinks>
         {links.map((link, index) => (
-          <Link key={index} href={link.href} className="p_n card__link">
+          <CardLink key={index} href={link.href}>
             {link.name}
-          </Link>
+          </CardLink>
         ))}
-      </div>
-    </div>
-  </CardHorizontal>
+      </CardLinks>
+    </CardFooter>
+  </Card>
 );
 
 const HistoriesData = [
@@ -102,18 +112,18 @@ const HistoriesData = [
 
 const HistoriesBlock = () => (
   <MainBlock id="histories" container={false}>
-    <MainBlock__title>
+    <MainBlockTitle>
       <H2>Истории путешествий</H2>
-      <MainBlock__description>
+      <MainBlockDescription>
         Идейные соображения высшего порядка, <br />а также рамки и место
         обучения кадров
-      </MainBlock__description>
-    </MainBlock__title>
-    <CardGridVertical>
+      </MainBlockDescription>
+    </MainBlockTitle>
+    <CardGrid>
       {HistoriesData.map((history, index) => (
-          <History {...history} key={index}/>
+        <History {...history} key={index} />
       ))}
-    </CardGridVertical>
+    </CardGrid>
   </MainBlock>
 );
 

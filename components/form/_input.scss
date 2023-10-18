@@ -1,0 +1,61 @@
+.input {
+  background: var(--beige100);
+  border: 1px solid var(--beige200);
+  border-radius: 10px;
+  height: 68px;
+  width: 100%;
+  /* min-width: 500px; */
+  padding: 20px;
+  box-sizing: border-box;
+  appearance: none;
+}
+
+.input:hover {
+  background: var(--beige200);
+}
+
+.input:focus {
+  border: 1px solid var(--gray300);
+  outline: 0;
+}
+
+.form__input-selected {
+  color: var(--black);
+}
+
+.input::placeholder {
+  color: var(--gray300);
+}
+
+.input[type="date"] {
+  font-family: inherit;
+}
+
+.input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+}
+
+.input[type="date"]::-webkit-datetime-edit-month-field {
+  text-transform: uppercase;
+}
+.input[type="date"]::-webkit-datetime-edit-day-field {
+  text-transform: uppercase;
+}
+.input[type="date"]::-webkit-datetime-edit-year-field {
+  text-transform: uppercase;
+}
+
+.input[type="tel"]:valid {
+  border: 1px solid var(--beige200);
+}
+
+.input[type="tel"]:invalid {
+  border: 1px solid red;
+}
+
+@media screen and (max-width: 918px) {
+  .form__input {
+    height: 43px;
+    padding: 10px;
+  }
+}

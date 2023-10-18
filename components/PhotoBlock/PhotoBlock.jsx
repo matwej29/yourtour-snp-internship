@@ -1,20 +1,20 @@
 import PhotoSection from "../photo/Photo";
 import MainBlock, {
-  MainBlock__title,
-  MainBlock__description,
+  MainBlockTitle,
+  MainBlockDescription,
 } from "../main-block/MainBlock";
 import { H2 } from "../headings/Headings";
 
 // TODO: возможно, стоит перенести сюда содержимое PhotoSection.jsx
 const PhotoBlock = () => (
   <MainBlock container={false} id="photo">
-    <MainBlock__title>
+    <MainBlockTitle>
       <H2>Фотографии путешествий</H2>
-      <MainBlock__description>
+      <MainBlockDescription>
         Идейные соображения высшего порядка, <br />а также рамки и место
         обучения кадров
-      </MainBlock__description>
-    </MainBlock__title>
+      </MainBlockDescription>
+    </MainBlockTitle>
 
     <PhotoSection />
   </MainBlock>

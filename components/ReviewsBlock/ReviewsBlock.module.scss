@@ -1,0 +1,12 @@
+.grid {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 30px;
+  }
+  
+  @media screen and (max-width: 918px) {
+    .grid{
+      grid-auto-flow: row;
+      gap: 18px;
+    }
+  }

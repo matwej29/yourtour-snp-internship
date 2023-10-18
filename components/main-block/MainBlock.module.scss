@@ -1,0 +1,46 @@
+@use "../container/Container.module.scss";
+@use "../../shared/styles/typography.module.scss";
+
+%main-block-base {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 135px;
+}
+
+.main-block {
+  @extend %main-block-base;
+  width: 100vw;
+}
+
+.main-block-container {
+  @extend %main-block-base;
+  @extend .container;
+}
+
+.description {
+  @extend .p_s, .p_gray, .p_clear-margin;
+}
+
+.title {
+  @extend .text-center;
+
+  display: flex;
+  max-width: 97vw;
+  flex-direction: column;
+  margin-bottom: 100px;
+  gap: 35px;
+}
+
+@media screen and (max-width: 918px) {
+  .main-block {
+    margin-bottom: 75px;
+  }
+
+  .title {
+    margin-bottom: 50px;
+    gap: 30px;
+  }
+}

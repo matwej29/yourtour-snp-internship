@@ -1,0 +1,14 @@
+.logo {
+  height: 30px;
+  width: 181px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("./YourTour.svg");
+}
+
+@media screen and (max-width: 918px) {
+  .logo {
+    width: 133px;
+  }
+}
