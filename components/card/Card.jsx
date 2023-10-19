@@ -9,7 +9,7 @@ const Card = ({ children, src, isHorizontal = false }) => (
       styles.card,
       isHorizontal ? styles.card_type_horizontal : ""
     )}>
-    <div className={styles.card__content}>{children}</div>
+    <div className={styles.content}>{children}</div>
     <CardImage src={src} />
   </div>
 );

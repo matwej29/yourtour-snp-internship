@@ -44,7 +44,7 @@ const card_content_list = [
 ];
 
 const CardContent = ({ children }) => (
-  <div className={cardStyles.card__content}>{children}</div>
+  <div className={cardStyles.content}>{children}</div>
 );
 
 const CardTitle = ({ children }) => (
